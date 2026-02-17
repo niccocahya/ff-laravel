@@ -69,7 +69,7 @@
                     <div class="img w-[60%] flex flex-col gap-2 items-center">
                         <div class="img-wrapper aspect-square overflow-hidden w-full">
                             <img src="{{ asset('images/news-img.png') }}" class="w-full h-full object-cover bg-center bg-cover rounded-xl"
-                                alt="event-1">
+                                alt="event-1a">
                         </div>
                         <h1 class="text-xs font-medium">Poster AGAK LAEN! MENYALA FARMASIKU!</h1>
                     </div>
@@ -100,6 +100,7 @@
                         unde beatae impedit dolores optio, incidunt ducimus, suscipit voluptates similique voluptatibus
                         facilis repellat temporibus delectus quae, totam expedita aliquid neque dolorem.
                     </h1>
+
                     <div class="other-news w-full flex flex-col gap-3">
                         <h1 class="text-xl font-semibold">Other News</h1>
                         <div class="other-news-lists flex grid-cols-4 w-full h-72 gap-2">
