@@ -9,3 +9,16 @@ Route::get('/', function () {
 Route::get('/news', function(){
     return view('news.index');
 });
+
+Route::get('/faculty-profile', function(){
+    return view('faculty-profile.index');
+});
+
+Route::get('/leadership-organization', function(){
+    return view('leadership-organization.index');
+});
+
+Route::get('/academic-society', function(){
+    return view('academic-society.index');
+});
+
