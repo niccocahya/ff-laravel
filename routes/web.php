@@ -22,3 +22,6 @@ Route::get('/academic-society', function(){
     return view('academic-society.index');
 });
 
+Route::get('/detail-dosen', function(){
+    return view('detail-dosen.index');
+});
