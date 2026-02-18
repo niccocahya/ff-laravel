@@ -1,6 +1,9 @@
 <div>
     <nav class="w-full h-16 bg-[#275CAA] flex flex-row p-3 px-20 justify-between fixed z-50">
-        <img src="{{ asset('images/logo-ff.png') }}" alt="logo-ff">
+        <a href="/">
+            <img src="{{ asset('images/logo-ff.png') }}" alt="logo-ff" class="h-full w-auto">
+        </a>
+
         <div class="nav-right flex items-center gap-4">
             <div class="lang flex text-xs gap-1 items-center text-[#F7FFFA]">
                 <a href="#" class="font-semibold hover:underline underline-offset-2 ">EN</a>
