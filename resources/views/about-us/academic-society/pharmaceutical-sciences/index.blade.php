@@ -58,7 +58,7 @@
                 </div>
                 <div class="flex justify-center gap-12">
                     <div class="w-[280px] h-[420px] bg-white rounded-2xl shadow-lg overflow-hidden relative group cursor-pointer">
-                        <img src="images/juni_ekowati.jpg" alt="Prof. Juni Ekowati" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <img src="{{ asset('images/juni_ekowati.jpg') }}" alt="Prof. Juni Ekowati" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                         <div class="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                         <div class="absolute bottom-8 left-6 right-6 text-white text-left">
                             <h2 class="text-md font-bold leading-snug">Prof. Dr. apt. Juni Ekowati, M.Si.</h2>
@@ -66,7 +66,7 @@
                         </div>
                     </div>
                     <div class="w-[280px] h-[420px] bg-white rounded-2xl shadow-lg overflow-hidden relative group cursor-pointer">
-                        <img src="images/retno_widyowati.jpg" alt="Prof. Retno Widyowati" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <img src="{{ asset('images/retno_widyowati.jpg') }}" alt="Prof. Retno Widyowati" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                         <div class="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                         <div class="absolute bottom-8 left-6 right-6 text-white text-left">
                             <h2 class="text-md font-bold leading-snug">Prof. apt. Retno Widyowati, S.Si., M.Pharm., Ph.D.</h2>
@@ -117,7 +117,7 @@
                     </div>
                     <div class="flex justify-center">
                         <div class="relative w-[260px] h-[360px] rounded-2xl overflow-hidden shadow-xl group cursor-pointer">
-                            <img src="images/tristiana_erawati.jpg" alt="Prof. Tristiana" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <img src="{{ asset('images/tristiana_erawati.jpg') }}" alt="Prof. Tristiana" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                             <div class="absolute bottom-6 left-4 right-4 text-left text-white">
                                 <h2 class="text-sm font-bold leading-tight">Prof. apt. Tristiana Erawati Munandar M.Si.</h2>
@@ -166,7 +166,7 @@
                     </div>
                     <div class="flex justify-center">
                         <div class="relative w-[260px] h-[360px] rounded-2xl overflow-hidden shadow-xl group cursor-pointer">
-                            <img src="images/sukardiman.jpg" alt="Prof. Sukardiman" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <img src="{{ asset('images/sukardiman.jpg') }}" alt="Prof. Sukardiman" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                             <div class="absolute bottom-6 left-4 right-4 text-left text-white">
                                 <h2 class="text-sm font-bold leading-tight">Prof. apt. Dr. Sukardiman, MS.</h2>
@@ -216,7 +216,7 @@
                     </div>
                     <div class="flex justify-center">
                         <div class="relative w-[260px] h-[360px] rounded-2xl overflow-hidden shadow-xl group cursor-pointer">
-                            <img src="images/riesta_primaharinastiti.jpg" alt="Dr. Riesta Primaharinastiti" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <img src="{{ asset('images/riesta_primaharinastiti.jpg') }}" alt="Dr. Riesta Primaharinastiti" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                             <div class="absolute bottom-6 left-4 right-4 text-left text-white">
                                 <h2 class="text-sm font-bold leading-tight">Dr. apt. Riesta Primaharinastiti, S.Si., M.Si.</h2>

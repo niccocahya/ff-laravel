@@ -77,3 +77,35 @@ Route::get('/research-publication/journals', function(){
 Route::get('/research-publication/ethics', function(){
     return view('research-publication/ethics.index');
 });
+
+Route::get('/services-information/news-events/events', function(){
+    return view('services-information/news-events/events.index');
+});
+
+Route::get('/services-information/news-events/news', function(){
+    return view('services-information/news-events/news.index');
+});
+
+Route::get('/services-information/survey-evaluation', function(){
+    return view('services-information/survey-evaluation.index');
+});
+
+Route::get('/services-information/PPID', function(){
+    return view('services-information/PPID.index');
+});
+
+Route::get('/services-information/important-links', function(){
+    return view('services-information/important-links.index');
+});
+
+Route::get('/services-information/public-services', function(){
+    return view('services-information/public-services.index');
+});
+
+Route::get('/services-information/forms-downloads/downloads', function(){
+    return view('services-information/forms-downloads/downloads.index');
+});
+
+Route::get('/services-information/forms-downloads/forms', function(){
+    return view('services-information/forms-downloads/forms.index');
+});
