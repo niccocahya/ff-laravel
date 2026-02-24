@@ -1,0 +1,33 @@
+@props([
+    'title',
+    'description',
+    'href' => '#'
+])
+
+<a 
+    href="{{ $href }}"
+    class="w-full flex items-center justify-between gap-10 group"
+>
+    <div class="w-[40%] flex flex-col gap-5">
+        <h1 class="text-4xl font-medium">
+            {{ $title }}
+        </h1>
+
+        <p class="text-justify">
+            {{ $description }}
+        </p>
+    </div>
+
+    <svg 
+            class="rotate-[-45deg]"
+            xmlns="http://www.w3.org/2000/svg"
+            width="60"
+            height="60"
+            fill="#0a0000"
+            viewBox="0 0 256 256"
+        >
+            <path
+                d="M128,28A100,100,0,1,0,228,128,100.11,100.11,0,0,0,128,28Zm0,192a92,92,0,1,1,92-92A92.1,92.1,0,0,1,128,220Zm42.83-94.83a4,4,0,0,1,0,5.66l-32,32a4,4,0,0,1-5.66-5.66L158.34,132H88a4,4,0,0,1,0-8h70.34L133.17,98.83a4,4,0,0,1,5.66-5.66Z">
+            </path>
+        </svg>
+</a>
