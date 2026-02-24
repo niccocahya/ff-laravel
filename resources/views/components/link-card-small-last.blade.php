@@ -11,7 +11,7 @@
         onclick="toggleAccordion{{ $id }}()"
         class="flex items-center justify-between w-full gap-10 text-left"
     >
-        <div class="w-[40%] flex flex-col gap-3">
+        <div class="w-full flex flex-col gap-3">
             <h1 class="text-2xl">
                 {{ $title }}
             </h1>

@@ -45,7 +45,7 @@
                     service in the field of pharmacy to support public health development.</h1>
             </div>
             <x-pagination-faculty-profile active="integrity" />
-            <div class="main-integrity fade-in pb-10 px-28 flex flex-col gap-10 bg-[#F7FFFA]">
+            <div class="main-integrity fade-in pb-14 px-28 flex flex-col gap-10 bg-[#F7FFFA]">
                 <div class="w-full flex flex-col gap-10">
                     <div class="areas flex w-full gap-10">
                         <div class="areas-left w-[40%] gap-5 flex flex-col">
