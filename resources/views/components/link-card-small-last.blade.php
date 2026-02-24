@@ -31,6 +31,4 @@
             </path>
         </svg>
     </a>
-    <div class="w-full mt-2 bg-black h-[1px] rounded-full"></div>
-
 </div>
