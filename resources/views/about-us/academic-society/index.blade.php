@@ -58,7 +58,7 @@
                 </div>
                 <div class="flex justify-center gap-12">
                     <div class="w-[280px] h-[420px] bg-white rounded-2xl shadow-lg overflow-hidden relative group cursor-pointer">
-                        <img src="images/andi_hermansyah.jpg" alt="apt. Andi Hermansyah" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <img src="{{ asset('images/andi_hermansyah.jpg') }}" alt="apt. Andi Hermansyah" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                         <div class="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                         <div class="absolute bottom-8 left-6 right-6 text-white text-left">
                             <h2 class="text-md font-bold leading-snug">apt. Andi Hermansyah, S.Farm., M.Sc., Ph.D.</h2>
@@ -66,7 +66,7 @@
                         </div>
                     </div>
                     <div class="w-[280px] h-[420px] bg-white rounded-2xl shadow-lg overflow-hidden relative group cursor-pointer">
-                        <img src="images/dinda_monika.jpg" alt="apt. Dinda Monika" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <img src="{{ asset('images/dinda_monika.jpg') }}" alt="apt. Dinda Monika" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                         <div class="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                         <div class="absolute bottom-8 left-6 right-6 text-white text-left">
                             <h2 class="text-md font-bold leading-snug">apt. Dinda Monika Nusantara Ratri, S.Farm., M.Farm.Klin.</h2>
@@ -114,7 +114,7 @@
                     </div>
                     <div class="flex justify-center">
                         <div class="relative w-[260px] h-[360px] rounded-2xl overflow-hidden shadow-xl group cursor-pointer">
-                            <img src="images/umi_athiyah.jpg" alt="Prof. Umi Athiyah" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <img src="{{ asset('images/umi_athiyah.jpg') }}" alt="Prof. Umi Athiyah" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                             <div class="absolute bottom-6 left-4 right-4 text-left text-white">
                                 <h2 class="text-sm font-bold leading-tight">Prof. apt. Dr. Umi Athiyah, MS.</h2>
@@ -164,7 +164,7 @@
                     </div>
                     <div class="flex justify-center">
                         <div class="relative w-[260px] h-[360px] rounded-2xl overflow-hidden shadow-xl group cursor-pointer">
-                            <img src="images/budi_suprapti.jpg" alt="Prof. Budi Suprapti" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <img src="{{ asset('images/budi_suprapti.jpg') }}" alt="Prof. Budi Suprapti" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                             <div class="absolute bottom-6 left-4 right-4 text-left text-white">
                                 <h2 class="text-sm font-bold leading-tight">Prof. Dr. apt. Budi Suprapti, M.Si.</h2>
