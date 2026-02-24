@@ -30,6 +30,14 @@ Route::get('/about-us/leadership-organization', function(){
     return view('about-us/leadership-organization.index');
 });
 
+Route::get('/about-us/academic-society/pharmaceutical-sciences', function(){
+    return view('about-us/academic-society/pharmaceutical-sciences.index');
+});
+
+Route::get('/about-us/academic-society/staff', function(){
+    return view('about-us/academic-society/staff.index');
+});
+
 Route::get('/about-us/academic-society', function(){
     return view('about-us/academic-society.index');
 });
