@@ -43,7 +43,7 @@
                 <h1 class="w-[50%] text-justify">Stay updated with key academic dates, lecture schedules, and important
                     events throughout the semester.</h1>
             </div>
-            <div class="fac-cal fade-in py-10 px-28 flex flex-col gap-10 bg-[#F7FFFA]">
+            <div class="fac-cal fade-in py-14 px-28 flex flex-col gap-10 bg-[#F7FFFA]">
                 <x-link-card title="UNAIR’s Academic Calendar"
                     description="Access UNAIR’s official academic calendar, including important dates for registration, lectures, examinations, and academic holidays."
                     href="https://google.com" />

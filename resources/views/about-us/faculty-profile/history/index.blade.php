@@ -45,7 +45,7 @@
                     service in the field of pharmacy to support public health development.</h1>
             </div>
             <x-pagination-faculty-profile active="history" />
-            <div class="main-history fade-in pb-10 w-full px-28 flex flex-col gap-10 bg-[#F7FFFA]">
+            <div class="main-history fade-in pb-14 w-full px-28 flex flex-col gap-10 bg-[#F7FFFA]">
                 <div class="history w-full flex flex-col gap-5">
                     <h1 class="history-head text-4xl font-medium w-full">History</h1>
                     <div class="history-1 flex text-justify w-full items-center gap-5">

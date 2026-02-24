@@ -8,7 +8,7 @@
     href="{{ $href }}"
     class="w-full flex items-center justify-between gap-10 group"
 >
-    <div class="w-[40%] flex flex-col gap-5">
+    <div class="w-full flex flex-col gap-5">
         <h1 class="text-4xl font-medium">
             {{ $title }}
         </h1>

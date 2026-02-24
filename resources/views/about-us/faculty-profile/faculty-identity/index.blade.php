@@ -45,7 +45,7 @@
                     service in the field of pharmacy to support public health development.</h1>
             </div>
             <x-pagination-faculty-profile active="identity" />
-            <div class="main-identity fade-in pb-10 w-full px-28 flex flex-col gap-10 bg-[#F7FFFA]">
+            <div class="main-identity fade-in pb-14 w-full px-28 flex flex-col gap-10 bg-[#F7FFFA]">
                 <div class="logo w-full flex flex-col gap-5">
                     <h1 class="logo-head text-4xl font-medium w-full mb-2">Logo</h1>
                     <div class="logo-1 flex flex-col text-justify w-full items-center gap-5">

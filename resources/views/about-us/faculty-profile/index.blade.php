@@ -45,7 +45,7 @@
                     service in the field of pharmacy to support public health development.</h1>
             </div>
             <x-pagination-faculty-profile active="profile" />
-            <div class="main-profile fade-in pb-10 px-28 flex flex-col gap-10 bg-[#F7FFFA]">
+            <div class="main-profile fade-in pb-14 px-28 flex flex-col gap-10 bg-[#F7FFFA]">
                 <div class="vision-mission flex w-full gap-10">
                     <div class="vm-left w-[40%] gap-5 flex flex-col">
                         <h1 class="text-4xl font-medium text-left">Vision & Mission</h1>

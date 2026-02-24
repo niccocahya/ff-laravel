@@ -49,3 +49,23 @@ Route::get('/students-alumni/students-information', function(){
 Route::get('/students-alumni/students-organization', function(){
     return view('students-alumni/students-organization.index');
 });
+
+Route::get('/research-publication/research-groups', function(){
+    return view('research-publication/research-groups.index');
+});
+
+Route::get('/research-publication/community-services', function(){
+    return view('research-publication/community-services.index');
+});
+
+Route::get('/research-publication/publication-and-IPR', function(){
+    return view('research-publication/publication-and-IPR.index');
+});
+
+Route::get('/research-publication/journals', function(){
+    return view('research-publication/journals.index');
+});
+
+Route::get('/research-publication/ethics', function(){
+    return view('research-publication/ethics.index');
+});
