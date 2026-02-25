@@ -81,8 +81,8 @@
         ['label' => 'Faculty Profile', 'link' => '/about-us/faculty-profile'],
         ['label' => 'Leadership and Organization', 'link' => '/about-us/leadership-organization'],
         ['label' => 'Academic Society', 'link' => '/about-us/academic-society'],
-        ['label' => 'Facilities and Units', 'link' => '#'],
-        ['label' => 'Partnerships', 'link' => '#'],
+        ['label' => 'Facilities and Units', 'link' => '/about-us/facilities-units'],
+        ['label' => 'Partnerships', 'link' => '/about-us/partnerships'],
     ]" />
             <x-nav-accordion title="Academics" :items="[
         ['label' => 'Bachelor of Pharmacy and Apothecary Professional Education', 'link' => '#'],
@@ -94,8 +94,8 @@
             <x-nav-accordion title="Students & Alumni" :items="[
         ['label' => 'Student Organizations', 'link' => '/students-alumni/students-organization'],
         ['label' => 'Student Information', 'link' => '/students-alumni/students-information'],
-        ['label' => 'Alumnipedia', 'link' => '#'],
-        ['label' => 'FarmaPos Magazine', 'link' => '#'],
+        ['label' => 'Alumnipedia', 'link' => 'https://alumni.unair.ac.id/'],
+        ['label' => 'FarmaPos Magazine', 'link' => 'https://ff.unair.ac.id/files/content/1749807704-25-Majalah-Farmapos-ed-39.pdf'],
     ]" />
             <x-nav-accordion title="Research & Community Service" :items="[
         ['label' => 'Research Group', 'link' => '/research-publication/research-groups'],
@@ -117,17 +117,13 @@
 </nav>
 
 <style>
-    /* Hide scrollbar for Chrome, Safari and Opera */
     .scrollbar-hide::-webkit-scrollbar {
         display: none;
     }
 
-    /* Hide scrollbar for IE, Edge and Firefox */
     .scrollbar-hide {
         -ms-overflow-style: none;
-        /* IE and Edge */
         scrollbar-width: none;
-        /* Firefox */
     }
 </style>
 <script>
@@ -152,43 +148,34 @@
     const line3 = document.getElementById('line3');
 
     menuBtn.addEventListener('click', () => {
-        // 1. Toggle tinggi navbar jadi memenuhi layar
         mainNav.classList.toggle('h-16');
         mainNav.classList.toggle('h-screen');
 
-        // 2. Toggle visibilitas konten menu
         menuContent.classList.toggle('opacity-0');
         menuContent.classList.toggle('invisible');
         menuContent.classList.toggle('opacity-100');
         menuContent.classList.toggle('visible');
 
-        // 3. Animasi Icon Hamburger jadi "X" dengan smooth transition
         if (mainNav.classList.contains('h-screen')) {
-            // Menu terbuka - ubah jadi X dengan koordinat yang benar
-            line1.setAttribute('d', 'M6 6L18 18');  // Garis dari kiri atas ke kanan bawah
-            line2.setAttribute('d', 'M6 6L18 18');  // Duplikat garis pertama (akan di-opacity 0)
-            line3.setAttribute('d', 'M6 18L18 6');  // Garis dari kiri bawah ke kanan atas
+            line1.setAttribute('d', 'M6 6L18 18');  
+            line2.setAttribute('d', 'M6 6L18 18'); 
+            line3.setAttribute('d', 'M6 18L18 6'); 
 
-            // Atur opacity: line1 dan line3 terlihat, line2 hilang
             line1.style.opacity = '1';
             line2.style.opacity = '0';
             line3.style.opacity = '1';
 
-            // Putar sedikit untuk efek smooth
             line1.style.transform = 'rotate(0deg)';
             line3.style.transform = 'rotate(0deg)';
         } else {
-            // Menu tertutup - kembali ke hamburger dengan koordinat yang benar
-            line1.setAttribute('d', 'M4 6h16');   // Garis horizontal atas
-            line2.setAttribute('d', 'M4 12h16');  // Garis horizontal tengah
-            line3.setAttribute('d', 'M4 18h16');  // Garis horizontal bawah
+            line1.setAttribute('d', 'M4 6h16');   
+            line2.setAttribute('d', 'M4 12h16'); 
+            line3.setAttribute('d', 'M4 18h16'); 
 
-            // Reset opacity: semua garis terlihat
             line1.style.opacity = '1';
             line2.style.opacity = '1';
             line3.style.opacity = '1';
 
-            // Reset transform
             line1.style.transform = '';
             line3.style.transform = '';
         }

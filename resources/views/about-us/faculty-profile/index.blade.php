@@ -108,12 +108,12 @@
                         </x-accordion-last>
                     </div>
                 </div>
-                <x-big-accordion title="Quality Objectives"
+                <x-big-accordion-last title="Quality Objectives"
                     description="Defining Excellence through Data and Strategic Goals.">
                     <div class="flex justify-center">
                         <img src="{{ asset('images/image-117.png') }}" class="w-[90%]">
                     </div>
-                </x-big-accordion>
+                </x-big-accordion-last>
             </div>
             <x-footer />
         </div>
