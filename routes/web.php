@@ -137,3 +137,7 @@ Route::get('/services-information/forms-downloads/forms', function(){
 Route::get('/research-group', function(){
     return view('research-group.index');
 });
+
+Route::get('/sarjana', function(){
+    return view('sarjana.index');
+});

@@ -11,7 +11,7 @@
 
 <body>
     <div class="wrapper-all w-full min-h-screen bg-[#F7FFFA] relative">
-        <x-navbar />
+        <x-nav-prodi />
         <div class="main-home flex flex-col gap-24 pt-16">
             <div class="heroes w-full h-[80vh] flex items-center">
                 <div class="w-[33%] flex flex-col justify-center gap-10 px-14 h-full text-sm ">
@@ -22,11 +22,9 @@
                         <div class="w-[30%] h-[0.4vh] bg-green-600 rounded-full"></div>
                     </div>
                     <h1 class="text-5xl font-medium">Faculty of Pharmacy Universitas Airlangga</h1>
-                    <a href="#study-program">
-                        <button class="w-full p-3 rounded-md bg-[#275CAA] hover:bg-[#194d9b] transition-all duration-200">
-                            <h1 class="text-[#F7FFFA]">Explore Academic Programs</h1>
-                        </button>
-                    </a>
+                    <button class="w-full p-3 rounded-md bg-[#275CAA] hover:bg-[#194d9b] transition-all duration-200">
+                        <h1 class="text-[#F7FFFA]">Explore Academic Programs</h1>
+                    </button>
                 </div>
                 <div class="w-[67%] h-full flex justify-between">
                     <img src="{{ asset('images/image 16.png') }}" alt="Gedung FF">
@@ -58,12 +56,10 @@
                         produce innovative graduates with excellent competence, maintaining its legacy as a leader in
                         health
                         education for over six decades.</h1>
-                    <a href="/about-us/faculty-profile">
-                        <button
-                            class="py-[0.67rem] px-6 border-[0.20vh] rounded-md border-[#275CAA] w-fit transition-all duration-200 bg-transparent hover:bg-[#275CAA] text-[#275CAA]  hover:text-[#F7FFFA] hover:text-[#F7FFFA] transition-all duration-200">
-                            <h1 class="font-medium text-sm">More about the Faculty</h1>
-                        </button>
-                    </a>
+                    <button
+                        class="py-[0.67rem] px-6 border-[0.20vh] rounded-md border-[#275CAA] w-fit transition-all duration-200 bg-transparent hover:bg-[#275CAA] text-[#275CAA]  hover:text-[#F7FFFA] hover:text-[#F7FFFA] transition-all duration-200">
+                        <h1 class="font-medium text-sm">More about the Faculty</h1>
+                    </button>
                 </div>
             </div>
             <div class="ranking w-full flex h-64 bg-[#275CAA] py-5 gap-3 overflow-hidden">
@@ -115,7 +111,7 @@
                     <h1>Number of researches performed in 2024</h1>
                 </div>
             </div>
-            <div id="study-program" class="programs px-28 flex flex-col gap-10 justify-between">
+            <div class="programs px-28 flex flex-col gap-10 justify-between">
                 <div class="program-head flex flex-col gap-5">
                     <h1 class="text-4xl font-medium">Study Program</h1>
                     <h1>Educational program organized by the Faculty of Pharmacy, Airlangga University.</h1>
@@ -428,12 +424,10 @@
                         <button class="p-3 px-7 rounded-md bg-[#275CAA] hover:bg-[#194d9b] transition-all duration-200">
                             <h1 class="text-[#F7FFFA]">Contact Us</h1>
                         </button>
-                        <a href="/services-information/forms-downloads/forms">
-                            <button
-                                class="p-3 px-7 rounded-md bg-[#F7FFFA] border border-[#275CAA] text-[#275CAA] hover:text-[#F7FFFA] hover:bg-[#275CAA] transition-all duration-200">
-                                <h1 class="">Forms and Downloads</h1>
-                            </button>
-                        </a>
+                        <button
+                            class="p-3 px-7 rounded-md bg-[#F7FFFA] border border-[#275CAA] text-[#275CAA] hover:text-[#F7FFFA] hover:bg-[#275CAA] transition-all duration-200">
+                            <h1 class="">Forms and Downloads</h1>
+                        </button>
                     </div>
                 </div>
                 <div class="w-full h-full bg-black/40 absolute top-0 z-0 left-0 translate-x-0"></div>
