@@ -19,10 +19,7 @@
 
 <div class="w-full min-h-screen relative">
 
-    <nav class="w-full h-16 bg-[#275CAA] flex items-center justify-between px-[128px] fixed top-0 z-50">
-        <img src="{{ asset('images/logo-ff.png') }}" alt="logo" class="h-10">
-        <h1 class="text-white font-semibold">Lecturer Detail</h1>
-    </nav>
+    <x-navbar />
 
 
     <main class="max-w-[1440px] mx-auto pt-[120px] pb-[80px] px-[128px] flex flex-col gap-[64px] bg-white">
@@ -34,7 +31,7 @@
                         <path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
                     </svg>
                 </div>
-                <span class="text-lg font-medium text-neutral-950">Back</span>
+                <!-- <span class="text-lg font-medium text-neutral-950">Back</span> -->
             </a>
         </div>
 
@@ -43,7 +40,7 @@
             
             <div class="w-72 h-96 relative bg-gray-50 rounded-[10px] shadow-[1px_2px_4px_0px_rgba(0,21,7,0.24)] overflow-hidden shrink-0">
                 <img class="w-full h-full object-cover" 
-                     src="https://placehold.co/292x422?text=Lecturer+Photo" 
+                     img src="images/image-46.png"
                      alt="Lecturer Photo" />
             </div>
 
@@ -67,29 +64,47 @@
                 </div>
 
                 <div class="flex flex-wrap gap-8 pt-6">
-                    <div class="flex items-center gap-2">
-                        <div class="w-4 h-4 bg-[#275CAA] rounded-sm"></div>
-                        <span class="text-[#275CAA] text-lg font-normal">elida-z@ff.unair.ac.id</span>
-                    </div>
-                    <div class="flex gap-6">
-                        <a href="#" class="flex items-center gap-2 group">
-                            <div class="w-4 h-4 border-[1.5px] border-[#275CAA] rounded-sm group-hover:bg-[#275CAA] transition-colors"></div>
-                            <span class="text-[#275CAA] text-lg font-normal underline">Scholar Unair</span>
-                        </a>
-                        <a href="#" class="flex items-center gap-2 group">
-                            <div class="w-4 h-4 border-[1.5px] border-[#275CAA] rounded-sm group-hover:bg-[#275CAA] transition-colors"></div>
-                            <span class="text-[#275CAA] text-lg font-normal underline">Scopus</span>
-                        </a>
-                        <a href="#" class="flex items-center gap-2 group">
-                            <div class="w-4 h-4 border-[1.5px] border-[#275CAA] rounded-sm group-hover:bg-[#275CAA] transition-colors"></div>
-                            <span class="text-[#275CAA] text-lg font-normal underline">Sinta</span>
-                        </a>
-                        <a href="#" class="flex items-center gap-2 group">
-                            <div class="w-4 h-4 border-[1.5px] border-[#275CAA] rounded-sm group-hover:bg-[#275CAA] transition-colors"></div>
-                            <span class="text-[#275CAA] text-lg font-normal underline">Orcid</span>
-                        </a>
-                    </div>
-                </div>
+    <a href="https://google.com" target="_blank" class="flex items-center gap-2 group text-[#275CAA] no-underline hover:underline transition-all">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail">
+            <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/>
+        </svg>
+        <span class="text-lg font-normal">elida-z@ff.unair.ac.id</span>
+    </a>
+
+    <div class="flex gap-6">
+        <a href="https://google.com" target="_blank" class="flex items-center gap-2 group text-[#275CAA] no-underline hover:underline transition-all">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+            </svg>
+            <span class="text-lg font-normal">Scholar Unair</span>
+        </a>
+
+        <a href="https://google.com" target="_blank" class="flex items-center gap-2 group text-[#275CAA] no-underline hover:underline transition-all">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+            </svg>
+            <span class="text-lg font-normal">Scopus</span>
+        </a>
+
+        <a href="https://google.com" target="_blank" class="flex items-center gap-2 group text-[#275CAA] no-underline hover:underline transition-all">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link ">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+            </svg>
+            <span class="text-lg font-normal">Sinta</span>
+        </a>
+
+        <a href="https://google.com" target="_blank" class="flex items-center gap-2 group text-[#275CAA] no-underline hover:underline transition-all">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+            </svg>
+            <span class="text-lg font-normal">Orcid</span>
+        </a>
+    </div>
+</div>
             </div>
         </section>
 
@@ -173,9 +188,7 @@
     </main>
 
 
-    <footer class="w-full px-[128px] py-12 bg-[#275CAA] text-white text-center">
-        <p class="text-[14px] opacity-70 italic font-['Lato']">© 2025 Felitech Team - Faculty of Pharmacy Universitas Airlangga</p>
-    </footer>
+    <x-footer />
 
 </div>
 

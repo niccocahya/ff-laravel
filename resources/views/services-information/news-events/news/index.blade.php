@@ -20,7 +20,7 @@
 
     <div class="w-full flex flex-col pt-16 fade-in">
         
-        <div class="w-full bg-gradient-to-r from-[#275CAA] to-[#2E9853] px-28 py-20 flex flex-col justify-center text-white">
+        <div class="w-full h-[45vh] bg-gradient-to-r from-[#275CAA] to-[#2E9853] px-28 py-20 flex flex-col justify-center text-white">
             <div class="flex items-center gap-2 mb-4">
                 <h1 class="text-5xl font-semibold">News and Events</h1>
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 opacity-80 mt-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">

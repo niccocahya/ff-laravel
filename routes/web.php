@@ -42,6 +42,30 @@ Route::get('/about-us/academic-society', function(){
     return view('about-us/academic-society.index');
 });
 
+Route::get('/about-us/facilities-units', function(){
+    return view('about-us/facilities-units.index');
+});
+
+Route::get('/about-us/facilities-units/reading-room-collection-books', function(){
+    return view('about-us/facilities-units/reading-room-collection-books.index');
+});
+
+Route::get('/about-us/facilities-units/thesis-list-collection', function(){
+    return view('about-us/facilities-units/thesis-list-collection.index');
+});
+
+Route::get('/about-us/facilities-units/apotek-farmasi', function(){
+    return view('about-us/facilities-units/apotek-farmasi.index');
+});
+
+Route::get('/about-us/facilities-units/assessment-service-unit', function(){
+    return view('about-us/facilities-units/assessment-service-unit.index');
+});
+
+Route::get('/partnerships', function(){
+    return view('partnerships.index');
+});
+
 Route::get('/detail-dosen', function(){
     return view('detail-dosen.index');
 });
@@ -108,4 +132,8 @@ Route::get('/services-information/forms-downloads/downloads', function(){
 
 Route::get('/services-information/forms-downloads/forms', function(){
     return view('services-information/forms-downloads/forms.index');
+});
+
+Route::get('/research-group', function(){
+    return view('research-group.index');
 });
