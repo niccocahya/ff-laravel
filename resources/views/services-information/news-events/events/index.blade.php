@@ -20,7 +20,7 @@
 
     <div class="w-full flex flex-col pt-16 fade-in">
         
-        <div class="w-full bg-gradient-to-r from-[#275CAA] to-[#2E9853] px-28 py-20 flex flex-col justify-center text-white">
+        <div class="w-full h-[45vh] bg-gradient-to-r from-[#275CAA] to-[#2E9853] px-28 py-20 flex flex-col justify-center text-white">
             <h1 class="text-5xl font-semibold mb-4">News and Events</h1>
             <p class="w-1/2 text-sm leading-relaxed text-gray-100">
                 Stay updated with key academic dates, lecture schedules, and important events throughout the semester.
