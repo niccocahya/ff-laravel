@@ -24,12 +24,36 @@
     
             <div class="nav-right flex items-center gap-4">
                 <div class="text-white flex gap-4">
-                    <a href="#" class="font-normal hover:underline underline-offset-2 cursor-pointer">About</a>
-                    <a href="#" class="font-normal hover:underline underline-offset-2 cursor-pointer">News & Events</a>
-                    <a href="#" class="font-normal hover:underline underline-offset-2 cursor-pointer">Education</a>
-                    <a href="#" class="font-normal hover:underline underline-offset-2 cursor-pointer">Alumni</a>
-                    <a href="#" class="font-normal hover:underline underline-offset-2 cursor-pointer">Collaboration</a>
-                    <a href="#" class="font-normal hover:underline underline-offset-2 cursor-pointer">Forms and Downloads</a>
+                    <a href="#" class="font-normal hover:underline underline-offset-2 cursor-pointer">
+                        <h1 class="font-light">
+                            About
+                        </h1>
+                    </a>
+                    <a href="#" class="font-normal hover:underline underline-offset-2 cursor-pointer">
+                        <h1 class="font-light">
+                            News & Events
+                        </h1>
+                    </a>
+                    <a href="#" class="font-normal hover:underline underline-offset-2 cursor-pointer">
+                        <h1 class="font-light">
+                            Education
+                        </h1>
+                    </a>
+                    <a href="#" class="font-normal hover:underline underline-offset-2 cursor-pointer">
+                        <h1 class="font-light">
+                            Alumni
+                        </h1>
+                    </a>
+                    <a href="#" class="font-normal hover:underline underline-offset-2 cursor-pointer">
+                        <h1 class="font-light">
+                            Collaboration
+                        </h1>
+                    </a>
+                    <a href="#" class="font-normal hover:underline underline-offset-2 cursor-pointer">
+                        <h1 class="font-light">
+                            Forms and Downloads
+                        </h1>
+                    </a>
                 </div>
             </div>
         </div>
