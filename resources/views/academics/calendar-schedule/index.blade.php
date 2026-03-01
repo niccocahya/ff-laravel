@@ -46,7 +46,7 @@
             <div class="fac-cal fade-in py-14 px-28 flex flex-col gap-10 bg-[#F7FFFA]">
                 <x-link-card title="UNAIR’s Academic Calendar"
                     description="Access UNAIR’s official academic calendar, including important dates for registration, lectures, examinations, and academic holidays."
-                    href="https://google.com" />
+                    href="https://pendidikan.unair.ac.id/v2/index.php/kalender-akademik-2/" />
                 <div class="w-full flex flex-col gap-5">
                     <h1 class="title-fc text-4xl font-medium">
                         Faculty Calendar

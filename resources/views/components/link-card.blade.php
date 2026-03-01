@@ -1,6 +1,6 @@
 @props([
     'title',
-    'description',
+    'description' => null, 
     'href' => '#'
 ])
 
@@ -13,9 +13,12 @@
             {{ $title }}
         </h1>
 
-        <p class="text-justify">
-            {{ $description }}
-        </p>
+        {{-- Cek apakah description ada isinya --}}
+        @if($description)
+            <p class="text-justify">
+                {{ $description }}
+            </p>
+        @endif
     </div>
 
     <svg 
