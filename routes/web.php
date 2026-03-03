@@ -141,3 +141,15 @@ Route::get('/research-group', function(){
 Route::get('/sarjana', function(){
     return view('sarjana.index');
 });
+
+Route::get('/sarjana/education', function(){
+    return view('sarjana/education.index');
+});
+
+Route::get('/sarjana/education/competency', function(){
+    return view('sarjana/education/competency.index');
+});
+
+Route::get('/sarjana/education/scholarship', function(){
+    return view('sarjana/education/scholarship.index');
+});
