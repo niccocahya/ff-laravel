@@ -85,7 +85,7 @@
         ['label' => 'Partnerships', 'link' => '/about-us/partnerships'],
     ]" />
             <x-nav-accordion title="Academics" :items="[
-        ['label' => 'Bachelor of Pharmacy and Apothecary Professional Education', 'link' => '#'],
+        ['label' => 'Bachelor of Pharmacy and Apothecary Professional Education', 'link' => '/sarjana'],
         ['label' => 'Master of Clinical Pharmacy', 'link' => '/#'],
         ['label' => 'Master of Pharmaceutical Sciences', 'link' => '#'],
         ['label' => 'Doctor of Pharmaceutical Sciences', 'link' => '#'],
