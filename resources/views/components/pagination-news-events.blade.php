@@ -7,7 +7,7 @@
         class="px-8 py-2 rounded-full text-sm font-medium transition-all shadow-sm text-center
         {{ $active === 'events'
             ? 'bg-[#275CAA] text-white'
-            : 'border border-[#275CAA] text-[#275CAA] bg-white hover:bg-[#275CAA] hover:text-white' }}">
+            : 'border border-[#275CAA] text-[#275CAA] bg-transparent hover:bg-[#275CAA] hover:text-white' }}">
         Events
     </a>
 
@@ -15,7 +15,7 @@
         class="px-8 py-2 rounded-full text-sm font-medium transition-all shadow-sm text-center
         {{ $active === 'news'
             ? 'bg-[#275CAA] text-white'
-            : 'border border-[#275CAA] text-[#275CAA] bg-white hover:bg-[#275CAA] hover:text-white' }}">
+            : 'border border-[#275CAA] text-[#275CAA] bg-transparent hover:bg-[#275CAA] hover:text-white' }}">
         News
     </a>
 </div>

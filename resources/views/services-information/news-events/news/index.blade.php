@@ -35,7 +35,7 @@
         <x-pagination-news-events active="news" />
 
         <div class="px-28 pb-8 flex gap-4 w-full">
-            <input type="text" placeholder="Search..." 
+            <input type="text" placeholder="Search..."
                 class="flex-grow rounded-lg border border-gray-300 px-4 py-2.5 text-sm bg-white focus:outline-none focus:border-[#275CAA] transition-colors">
             
             <div class="relative">
