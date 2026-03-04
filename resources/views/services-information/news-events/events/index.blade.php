@@ -12,6 +12,7 @@
             from { opacity: 0; transform: translateY(5px); }
             to { opacity: 1; transform: translateY(0); }
         }
+        .modal-active { overflow: hidden; }
     </style>
 </head>
 <body class="bg-[#F7FFFA] min-h-screen font-sans">
@@ -63,8 +64,8 @@
         <div class="px-28 pb-12 grid grid-cols-3 gap-8">
             
             <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
-                <div class="h-48 w-full bg-gray-200 relative">
-                    <img src="{{ asset('images/event-1.png') }}" alt="" class="w-full h-full object-cover">
+                <div class="h-48 w-full bg-gray-200 relative cursor-pointer group" onclick="openModal('{{ asset('images/event-1.png') }}')">
+                    <img src="{{ asset('images/event-1.png') }}" alt="" class="w-full h-full object-cover group-hover:opacity-90 transition-opacity">
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
                     <h2 class="font-bold text-[#1E293B] text-[15px] leading-snug mb-4">THE 2nd INTERNATIONAL SYMPOSIUM OF COSMETICS 2025</h2>
@@ -91,8 +92,8 @@
             </div>
 
             <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
-                <div class="h-48 w-full bg-gray-200 relative">
-                    <img src="{{ asset('images/event-2.png') }}" alt="" class="w-full h-full object-cover">
+                <div class="h-48 w-full bg-gray-200 relative cursor-pointer group" onclick="openModal('{{ asset('images/event-2.png') }}')">
+                    <img src="{{ asset('images/event-2.png') }}" alt="" class="w-full h-full object-cover group-hover:opacity-90 transition-opacity">
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
                     <h2 class="font-bold text-[#1E293B] text-[15px] leading-snug mb-4">THE 2nd INTERNATIONAL SYMPOSIUM OF COSMETICS 2025</h2>
@@ -119,8 +120,8 @@
             </div>
 
             <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
-                <div class="h-48 w-full bg-gray-200 relative">
-                    <img src="{{ asset('images/event-3.png') }}" alt="" class="w-full h-full object-cover">
+                <div class="h-48 w-full bg-gray-200 relative cursor-pointer group" onclick="openModal('{{ asset('images/event-3.png') }}')">
+                    <img src="{{ asset('images/event-3.png') }}" alt="" class="w-full h-full object-cover group-hover:opacity-90 transition-opacity">
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
                     <h2 class="font-bold text-[#1E293B] text-[15px] leading-snug mb-4">THE 2nd INTERNATIONAL SYMPOSIUM OF COSMETICS 2025</h2>
@@ -147,8 +148,8 @@
             </div>
             
             <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
-                <div class="h-48 w-full bg-gray-200 relative">
-                    <img src="{{ asset('images/event-2.png') }}" alt="" class="w-full h-full object-cover">
+                <div class="h-48 w-full bg-gray-200 relative cursor-pointer group" onclick="openModal('{{ asset('images/event-2.png') }}')">
+                    <img src="{{ asset('images/event-2.png') }}" alt="" class="w-full h-full object-cover group-hover:opacity-90 transition-opacity">
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
                     <h2 class="font-bold text-[#1E293B] text-[15px] leading-snug mb-4">THE 2nd INTERNATIONAL SYMPOSIUM OF COSMETICS 2025</h2>
@@ -175,8 +176,8 @@
             </div>
 
             <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
-                <div class="h-48 w-full bg-gray-200 relative">
-                    <img src="{{ asset('images/event-3.png') }}" alt="" class="w-full h-full object-cover">
+                <div class="h-48 w-full bg-gray-200 relative cursor-pointer group" onclick="openModal('{{ asset('images/event-3.png') }}')">
+                    <img src="{{ asset('images/event-3.png') }}" alt="" class="w-full h-full object-cover group-hover:opacity-90 transition-opacity">
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
                     <h2 class="font-bold text-[#1E293B] text-[15px] leading-snug mb-4">THE 2nd INTERNATIONAL SYMPOSIUM OF COSMETICS 2025</h2>
@@ -203,8 +204,8 @@
             </div>
 
             <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
-                <div class="h-48 w-full bg-gray-200 relative">
-                    <img src="{{ asset('images/event-1.png') }}" alt="" class="w-full h-full object-cover">
+                <div class="h-48 w-full bg-gray-200 relative cursor-pointer group" onclick="openModal('{{ asset('images/event-1.png') }}')">
+                    <img src="{{ asset('images/event-1.png') }}" alt="" class="w-full h-full object-cover group-hover:opacity-90 transition-opacity">
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
                     <h2 class="font-bold text-[#1E293B] text-[15px] leading-snug mb-4">THE 2nd INTERNATIONAL SYMPOSIUM OF COSMETICS 2025</h2>
@@ -231,8 +232,8 @@
             </div>
 
             <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
-                <div class="h-48 w-full bg-gray-200 relative">
-                    <img src="{{ asset('images/event-1.png') }}" alt="" class="w-full h-full object-cover">
+                <div class="h-48 w-full bg-gray-200 relative cursor-pointer group" onclick="openModal('{{ asset('images/event-2.png') }}')">
+                    <img src="{{ asset('images/event-2.png') }}" alt="" class="w-full h-full object-cover group-hover:opacity-90 transition-opacity">
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
                     <h2 class="font-bold text-[#1E293B] text-[15px] leading-snug mb-4">THE 2nd INTERNATIONAL SYMPOSIUM OF COSMETICS 2025</h2>
@@ -259,8 +260,8 @@
             </div>
 
             <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
-                <div class="h-48 w-full bg-gray-200 relative">
-                    <img src="{{ asset('images/event-3.png') }}" alt="" class="w-full h-full object-cover">
+                <div class="h-48 w-full bg-gray-200 relative cursor-pointer group" onclick="openModal('{{ asset('images/event-3.png') }}')">
+                    <img src="{{ asset('images/event-3.png') }}" alt="" class="w-full h-full object-cover group-hover:opacity-90 transition-opacity">
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
                     <h2 class="font-bold text-[#1E293B] text-[15px] leading-snug mb-4">THE 2nd INTERNATIONAL SYMPOSIUM OF COSMETICS 2025</h2>
@@ -287,8 +288,8 @@
             </div>
 
             <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
-                <div class="h-48 w-full bg-gray-200 relative">
-                    <img src="{{ asset('images/event-2.png') }}" alt="" class="w-full h-full object-cover">
+                <div class="h-48 w-full bg-gray-200 relative cursor-pointer group" onclick="openModal('{{ asset('images/event-1.png') }}')">
+                    <img src="{{ asset('images/event-1.png') }}" alt="" class="w-full h-full object-cover group-hover:opacity-90 transition-opacity">
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
                     <h2 class="font-bold text-[#1E293B] text-[15px] leading-snug mb-4">THE 2nd INTERNATIONAL SYMPOSIUM OF COSMETICS 2025</h2>
@@ -315,8 +316,8 @@
             </div>
 
             <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
-                <div class="h-48 w-full bg-gray-200 relative">
-                    <img src="{{ asset('images/event-3.png') }}" alt="" class="w-full h-full object-cover">
+                <div class="h-48 w-full bg-gray-200 relative cursor-pointer group" onclick="openModal('{{ asset('images/event-2.png') }}')">
+                    <img src="{{ asset('images/event-2.png') }}" alt="" class="w-full h-full object-cover group-hover:opacity-90 transition-opacity">
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
                     <h2 class="font-bold text-[#1E293B] text-[15px] leading-snug mb-4">THE 2nd INTERNATIONAL SYMPOSIUM OF COSMETICS 2025</h2>
@@ -343,8 +344,8 @@
             </div>
 
             <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
-                <div class="h-48 w-full bg-gray-200 relative">
-                    <img src="{{ asset('images/event-2.png') }}" alt="" class="w-full h-full object-cover">
+                <div class="h-48 w-full bg-gray-200 relative cursor-pointer group" onclick="openModal('{{ asset('images/event-3.png') }}')">
+                    <img src="{{ asset('images/event-3.png') }}" alt="" class="w-full h-full object-cover group-hover:opacity-90 transition-opacity">
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
                     <h2 class="font-bold text-[#1E293B] text-[15px] leading-snug mb-4">THE 2nd INTERNATIONAL SYMPOSIUM OF COSMETICS 2025</h2>
@@ -371,8 +372,8 @@
             </div>
 
             <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
-                <div class="h-48 w-full bg-gray-200 relative">
-                    <img src="{{ asset('images/event-1.png') }}" alt="" class="w-full h-full object-cover">
+                <div class="h-48 w-full bg-gray-200 relative cursor-pointer group" onclick="openModal('{{ asset('images/event-1.png') }}')">
+                    <img src="{{ asset('images/event-1.png') }}" alt="" class="w-full h-full object-cover group-hover:opacity-90 transition-opacity">
                 </div>
                 <div class="p-6 flex flex-col flex-grow">
                     <h2 class="font-bold text-[#1E293B] text-[15px] leading-snug mb-4">THE 2nd INTERNATIONAL SYMPOSIUM OF COSMETICS 2025</h2>
@@ -425,5 +426,57 @@
         <x-footer />
     </div>
 
+    <div id="imageModal" class="fixed inset-0 z-50 hidden bg-black/70 flex justify-center items-center opacity-0 transition-opacity duration-300 p-4 md:p-10" onclick="closeModal(event)">
+        
+        <div class="relative max-w-4xl max-h-[90vh] flex flex-col justify-center items-center" onclick="event.stopPropagation()">
+            
+            <button class="absolute top-2 right-2 bg-black/50 text-white rounded-full p-1.5 hover:bg-black/80 transition-colors z-50 cursor-pointer" onclick="closeModal(event, true)">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-7 md:w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            
+            <img id="modalImage" src="" alt="Event Poster" class="w-full h-auto max-h-[90vh] object-contain rounded-lg shadow-2xl">
+            
+        </div>
+        
+    </div>
+
+    <script>
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        const body = document.body;
+
+        function openModal(imageSrc) {
+            modalImg.src = imageSrc;
+            modal.classList.remove('hidden');
+            
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modal.classList.add('opacity-100');
+            }, 10);
+            
+            body.classList.add('modal-active');
+        }
+
+        function closeModal(event, forceClose = false) {
+            if (forceClose || event.target === modal) {
+                modal.classList.remove('opacity-100');
+                modal.classList.add('opacity-0');
+                
+                setTimeout(() => {
+                    modal.classList.add('hidden');
+                    modalImg.src = ""; 
+                    body.classList.remove('modal-active'); 
+                }, 300); 
+            }
+        }
+        
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape" && !modal.classList.contains('hidden')) {
+                closeModal(event, true);
+            }
+        });
+    </script>
 </body>
 </html>
