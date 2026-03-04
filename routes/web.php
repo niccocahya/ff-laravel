@@ -142,6 +142,26 @@ Route::get('/sarjana', function(){
     return view('sarjana.index');
 });
 
+Route::get('/sarjana/about', function(){
+    return view('sarjana/about.index');
+});
+
+Route::get('/sarjana/about/about-apothecary', function(){
+    return view('sarjana/about/about-apothecary.index');
+});
+
+Route::get('/sarjana/about/about-iup', function(){
+    return view('sarjana/about/about-iup.index');
+});
+
+Route::get('/sarjana/collaboration', function(){
+    return view('sarjana/collaboration.index');
+});
+
+Route::get('/sarjana/alumni', function(){
+    return view('sarjana/alumni.index');
+});
+
 Route::get('/sarjana/education', function(){
     return view('sarjana/education.index');
 });
