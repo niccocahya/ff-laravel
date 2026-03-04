@@ -189,7 +189,7 @@
                             </div>
                         </div>
 
-                        <div id="content-ape" class="tab-content hidden">
+                        <div id="content-ape" class="tab-content gap-7 flex flex-col hidden">
                             <div class="program-top flex flex-col gap-5">
                                 <x-link-card title="About Study Program" href="https://pendidikan.unair.ac.id/v2/index.php/kalender-akademik-2/" />
                                 <h1 class="text-justify">The Bachelor of Pharmacy study program is a pioneer in developing
@@ -308,7 +308,7 @@
                             </div>
                         </div>
 
-                        <div id="content-iup" class="tab-content hidden">
+                        <div id="content-iup" class="tab-content gap-7 flex flex-col hidden">
                             <div class="program-top flex flex-col gap-5">
                                 <x-link-card title="About Study Program" href="https://pendidikan.unair.ac.id/v2/index.php/kalender-akademik-2/" />
                                 <h1 class="text-justify">The Bachelor of Pharmacy study program is a pioneer in developing
@@ -429,7 +429,7 @@
                     </x-tabs>
                 </div>
             </div>
-            <div class="alumni w-full flex bg-[#275CAA] flex py-12 gap-10 px-28 overflow-hidden">
+            <div class="alumni w-full flex bg-[#275CAA] flex py-12 items-center gap-10 px-28 overflow-hidden">
                 <div class="alumni-left text-white flex flex-col gap-5 w-[40%]">
                     <h1 class="text-4xl font-medium">What Our Alumni Say</h1>
                     <h1 class="text-justify">Discover inspiring stories and meaningful insights shared by those who have grown, learned, and succeeded through their

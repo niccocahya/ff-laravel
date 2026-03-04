@@ -32,10 +32,10 @@
 
         <div class="px-28 pb-8 flex gap-4 w-full">
             <input type="text" placeholder="Search..." 
-                class="flex-grow rounded-lg border border-gray-300 px-4 py-2.5 text-sm bg-white focus:outline-none focus:border-[#275CAA] transition-colors">
+                class="flex-grow rounded-lg border border-gray-300 px-4 py-2.5 text-sm bg-transparent focus:outline-none focus:border-[#275CAA] transition-colors">
             
             <div class="relative">
-                <select class="w-40 appearance-none rounded-lg border border-gray-300 px-4 py-2.5 pr-10 text-sm bg-white focus:outline-none focus:border-[#275CAA] cursor-pointer text-gray-600">
+                <select class="w-40 appearance-none rounded-lg border border-gray-300 px-4 py-2.5 pr-10 text-sm bg-transparent focus:outline-none focus:border-[#275CAA] cursor-pointer text-gray-600">
                     <option>All Months</option>
                     <option>January</option>
                     <option>February</option>
@@ -46,7 +46,7 @@
             </div>
 
             <div class="relative">
-                <select class="w-40 appearance-none rounded-lg border border-gray-300 px-4 py-2.5 pr-10 text-sm bg-white focus:outline-none focus:border-[#275CAA] cursor-pointer text-gray-600">
+                <select class="w-40 appearance-none rounded-lg border border-gray-300 px-4 py-2.5 pr-10 text-sm bg-transparent focus:outline-none focus:border-[#275CAA] cursor-pointer text-gray-600">
                     <option>All Year</option>
                     <option>2025</option>
                     <option>2024</option>
@@ -63,7 +63,7 @@
 
         <div class="px-28 pb-12 grid grid-cols-3 gap-8">
             
-            <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+            <div class="bg-[#F7FFFA] rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
                 <div class="h-48 w-full bg-gray-200 relative cursor-pointer group" onclick="openModal('{{ asset('images/event-1.png') }}')">
                     <img src="{{ asset('images/event-1.png') }}" alt="" class="w-full h-full object-cover group-hover:opacity-90 transition-opacity">
                 </div>
@@ -91,7 +91,7 @@
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+            <div class="bg-[#F7FFFA] rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
                 <div class="h-48 w-full bg-gray-200 relative cursor-pointer group" onclick="openModal('{{ asset('images/event-2.png') }}')">
                     <img src="{{ asset('images/event-2.png') }}" alt="" class="w-full h-full object-cover group-hover:opacity-90 transition-opacity">
                 </div>
@@ -119,7 +119,7 @@
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+            <div class="bg-[#F7FFFA] rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
                 <div class="h-48 w-full bg-gray-200 relative cursor-pointer group" onclick="openModal('{{ asset('images/event-3.png') }}')">
                     <img src="{{ asset('images/event-3.png') }}" alt="" class="w-full h-full object-cover group-hover:opacity-90 transition-opacity">
                 </div>
@@ -147,7 +147,7 @@
                 </div>
             </div>
             
-            <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+            <div class="bg-[#F7FFFA] rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
                 <div class="h-48 w-full bg-gray-200 relative cursor-pointer group" onclick="openModal('{{ asset('images/event-2.png') }}')">
                     <img src="{{ asset('images/event-2.png') }}" alt="" class="w-full h-full object-cover group-hover:opacity-90 transition-opacity">
                 </div>
@@ -175,7 +175,7 @@
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+            <div class="bg-[#F7FFFA] rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
                 <div class="h-48 w-full bg-gray-200 relative cursor-pointer group" onclick="openModal('{{ asset('images/event-3.png') }}')">
                     <img src="{{ asset('images/event-3.png') }}" alt="" class="w-full h-full object-cover group-hover:opacity-90 transition-opacity">
                 </div>
@@ -203,7 +203,7 @@
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+            <div class="bg-[#F7FFFA] rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
                 <div class="h-48 w-full bg-gray-200 relative cursor-pointer group" onclick="openModal('{{ asset('images/event-1.png') }}')">
                     <img src="{{ asset('images/event-1.png') }}" alt="" class="w-full h-full object-cover group-hover:opacity-90 transition-opacity">
                 </div>
@@ -231,7 +231,7 @@
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+            <div class="bg-[#F7FFFA] rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
                 <div class="h-48 w-full bg-gray-200 relative cursor-pointer group" onclick="openModal('{{ asset('images/event-2.png') }}')">
                     <img src="{{ asset('images/event-2.png') }}" alt="" class="w-full h-full object-cover group-hover:opacity-90 transition-opacity">
                 </div>
@@ -259,7 +259,7 @@
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+            <div class="bg-[#F7FFFA] rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
                 <div class="h-48 w-full bg-gray-200 relative cursor-pointer group" onclick="openModal('{{ asset('images/event-3.png') }}')">
                     <img src="{{ asset('images/event-3.png') }}" alt="" class="w-full h-full object-cover group-hover:opacity-90 transition-opacity">
                 </div>
@@ -287,7 +287,7 @@
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+            <div class="bg-[#F7FFFA] rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
                 <div class="h-48 w-full bg-gray-200 relative cursor-pointer group" onclick="openModal('{{ asset('images/event-1.png') }}')">
                     <img src="{{ asset('images/event-1.png') }}" alt="" class="w-full h-full object-cover group-hover:opacity-90 transition-opacity">
                 </div>
@@ -315,7 +315,7 @@
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+            <div class="bg-[#F7FFFA] rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
                 <div class="h-48 w-full bg-gray-200 relative cursor-pointer group" onclick="openModal('{{ asset('images/event-2.png') }}')">
                     <img src="{{ asset('images/event-2.png') }}" alt="" class="w-full h-full object-cover group-hover:opacity-90 transition-opacity">
                 </div>
@@ -343,7 +343,7 @@
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+            <div class="bg-[#F7FFFA] rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
                 <div class="h-48 w-full bg-gray-200 relative cursor-pointer group" onclick="openModal('{{ asset('images/event-3.png') }}')">
                     <img src="{{ asset('images/event-3.png') }}" alt="" class="w-full h-full object-cover group-hover:opacity-90 transition-opacity">
                 </div>
@@ -371,7 +371,7 @@
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+            <div class="bg-[#F7FFFA] rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
                 <div class="h-48 w-full bg-gray-200 relative cursor-pointer group" onclick="openModal('{{ asset('images/event-1.png') }}')">
                     <img src="{{ asset('images/event-1.png') }}" alt="" class="w-full h-full object-cover group-hover:opacity-90 transition-opacity">
                 </div>
