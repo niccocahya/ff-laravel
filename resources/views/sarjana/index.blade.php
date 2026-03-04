@@ -24,7 +24,9 @@
                         <div class="head-top flex flex-col w-[50%]">
                             <button
                                 class="w-full p-3 rounded-md bg-[#275CAA] hover:bg-[#194d9b] transition-all duration-200">
-                                <h1 class="text-[#F7FFFA]">Explore Academic Programs</h1>
+                                <a href="/sarjana/education">
+                                    <h1 class="text-[#F7FFFA]">Explore Academic Programs</h1>
+                                </a>
                             </button>
                         </div>
                     </div>

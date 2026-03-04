@@ -18,9 +18,9 @@
 
 <body>
     <div class="wrapper-all w-full min-h-screen bg-[#F7FFFA] relative">
-        <x-navbar />
+        <x-nav-prodi />
         
-        <div class="main-calendar flex flex-col pt-16">
+        <div class="main-calendar flex flex-col pt-26">
             
             <div class="heroes h-[45vh] w-full gap-5 text-white bg-gradient-to-r from-[#275CAA] via-[#275CAA] to-[#2E9853] px-28 flex flex-col justify-center">
                 <div class="header-top flex items-end gap-3">

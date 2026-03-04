@@ -18,38 +18,38 @@
     <div id="main-nav"
         class="w-full h-16 bg-[#275CAA] flex flex-col p-3 px-10 md:px-20 transition-all duration-500 ease-in-out">
         <div class="flex flex-row justify-between items-center w-full h-10 min-h-[40px]">
-            <a href="/">
-                <img src="{{ asset('images/logo-ff.png') }}" alt="logo-ff" class="h-8 w-auto">
+            <a href="/sarjana">
+                <img src="{{ asset('images/logo-sarjana.png') }}" alt="logo-ff" class="h-8 w-auto">
             </a>
     
             <div class="nav-right flex items-center gap-4">
                 <div class="text-white flex gap-4">
-                    <a href="#" class="font-normal hover:underline underline-offset-2 cursor-pointer">
+                    <a href="/sarjana/about" class="font-normal hover:underline underline-offset-2 cursor-pointer">
                         <h1 class="font-light">
                             About
                         </h1>
                     </a>
-                    <a href="#" class="font-normal hover:underline underline-offset-2 cursor-pointer">
+                    <a href="" class="font-normal hover:underline underline-offset-2 cursor-pointer">
                         <h1 class="font-light">
                             News & Events
                         </h1>
                     </a>
-                    <a href="#" class="font-normal hover:underline underline-offset-2 cursor-pointer">
+                    <a href="/sarjana/education" class="font-normal hover:underline underline-offset-2 cursor-pointer">
                         <h1 class="font-light">
                             Education
                         </h1>
                     </a>
-                    <a href="#" class="font-normal hover:underline underline-offset-2 cursor-pointer">
+                    <a href="/sarjana/alumni" class="font-normal hover:underline underline-offset-2 cursor-pointer">
                         <h1 class="font-light">
                             Alumni
                         </h1>
                     </a>
-                    <a href="#" class="font-normal hover:underline underline-offset-2 cursor-pointer">
+                    <a href="/sarjana/collaboration" class="font-normal hover:underline underline-offset-2 cursor-pointer">
                         <h1 class="font-light">
                             Collaboration
                         </h1>
                     </a>
-                    <a href="#" class="font-normal hover:underline underline-offset-2 cursor-pointer">
+                    <a href="services-information/forms-downloads/forms" class="font-normal hover:underline underline-offset-2 cursor-pointer">
                         <h1 class="font-light">
                             Forms and Downloads
                         </h1>
