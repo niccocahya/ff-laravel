@@ -30,20 +30,8 @@
     <div class="wrapper-all w-full min-h-screen bg-[#F7FFFA] relative">
         <x-navbar />
         <div class="main-faculty-profile flex flex-col pt-16">
-            <div
-                class="heroes h-[45vh] w-full gap-5 text-white bg-gradient-to-r from-[#275CAA] via-[#275CAA] to-[#2E9853] px-28 flex flex-col justify-center">
-                <div class="header-top flex items-end gap-3">
-                    <h1 class="text-5xl font-medium">Faculty Profile</h1>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#ffffff" viewBox="0 0 256 256">
-                        <path
-                            d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z">
-                        </path>
-                    </svg>
-                </div>
-                <h1 class="w-[50%] text-justify">An overview of the faculty’s vision, mission, history, and commitment
-                    in advancing education, research, and community
-                    service in the field of pharmacy to support public health development.</h1>
-            </div>
+            <x-hero-section title='Faculty Profile'
+                description='An overview of the faculty’s vision, mission, history, and commitment in advancing education, research, and community service in the field of pharmacy to support public health development.' />
             <x-pagination-faculty-profile active="profile" />
             <div class="main-profile fade-in pb-14 px-28 flex flex-col gap-10 bg-[#F7FFFA]">
                 <div class="vision-mission flex w-full gap-10">
@@ -70,8 +58,8 @@
                             <br>2. To develop pharmaceutical science and technology and clinical-community pharmacy
                             through
                             basic and applied research
-                            to increase the added value of Indonesia's natural resources.
-                            <br>3. To implement community service programs in the field of pharmacy as a social
+                            to increase the added value of Indonesia' s natural resources. <br>3. To implement
+                            community service programs in the field of pharmacy as a social
                             responsibility, for empowerment,
                             improvement of health, and quality of life.
                             <br>4. To collaborate with various parties in education, research, and community service at
