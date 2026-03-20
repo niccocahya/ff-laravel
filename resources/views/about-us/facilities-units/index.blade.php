@@ -30,17 +30,8 @@
 
     <div class="main-home flex flex-col pt-16">
 
-        <div class="heroes h-[45vh] w-full gap-5 text-white bg-gradient-to-r from-[#275CAA] via-[#275CAA] to-[#2E9853] px-28 flex flex-col justify-center">
-            <div class="header-top flex items-end gap-3">
-                <h1 class="text-5xl font-medium tracking-[-0.04em]">Facilities & Units</h1>
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#ffffff" viewBox="0 0 256 256">
-                    <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
-                </svg>
-            </div>
-            <p class="w-[50%] text-justify leading-relaxed text-lg opacity-90">
-                An overview of academic facilities, laboratories, and supporting units that enhance learning, research, and professional development within the faculty.
-            </p>
-        </div>
+        <x-hero-section title='Facilities & Units'
+                description='An overview of academic facilities, laboratories, and supporting units that enhance learning, research, and professional development within the faculty.' />
 
         <x-pagination-facilities-units active="facilities" />
 

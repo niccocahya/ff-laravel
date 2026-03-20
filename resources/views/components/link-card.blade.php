@@ -9,7 +9,7 @@
     class="w-full flex items-center justify-between gap-10 group"
 >
     <div class="w-full flex flex-col gap-5">
-        <h1 class="text-4xl font-medium">
+        <h1 class="text-4xl font-medium tracking-[-0.04em]">
             {{ $title }}
         </h1>
 

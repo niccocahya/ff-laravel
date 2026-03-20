@@ -12,6 +12,11 @@
         body { font-family: 'Lato', sans-serif; }
         /* Utilitas tambahan untuk shadow spesifik Figma */
         .figma-shadow { shadow-[1px_2px_4px_0px_rgba(0,21,7,0.12)]; }
+        .fade-in { animation: fadeIn 0.4s ease-in-out; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
     </style>
 </head>
 
@@ -21,26 +26,25 @@
 
     <x-navbar />
 
-
     <main class="max-w-[1440px] mx-auto pt-[120px] pb-[80px] px-[128px] flex flex-col gap-[64px] bg-white">
 
         <div>
             <a href="javascript:history.back()" class="inline-flex items-center gap-4 group">
                 <div class="w-12 h-12 flex items-center justify-center rounded-[100px] border border-neutral-950 transition-all group-hover:bg-neutral-950 group-hover:text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M224,128a8,8,0,0,1-11.32,0l-80-80a8,8,0,0,1,11.32-11.32L128,116.69l74.34-74.35a8,8,0,0,1,11.32,11.32L139.31,128Z" class="hidden"></path>
                         <path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
                     </svg>
                 </div>
-                <!-- <span class="text-lg font-medium text-neutral-950">Back</span> -->
             </a>
         </div>
 
-
-        <section class="w-full inline-flex justify-start items-stretch gap-9">
+        <div class="w-full inline-flex justify-start items-stretch gap-9">
             
             <div class="w-72 h-96 relative bg-gray-50 rounded-[10px] shadow-[1px_2px_4px_0px_rgba(0,21,7,0.24)] overflow-hidden shrink-0">
                 <img class="w-full h-full object-cover" 
-                     img src="images/image-46.png"
+                     src="{{ asset('images/elida_zairina.png') }}"
+                     onerror="this.src='https://placehold.co/288x384?text=Lecturer+Photo'"
                      alt="Lecturer Photo" />
             </div>
 
@@ -64,52 +68,51 @@
                 </div>
 
                 <div class="flex flex-wrap gap-8 pt-6">
-    <a href="https://google.com" target="_blank" class="flex items-center gap-2 group text-[#275CAA] no-underline hover:underline transition-all">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail">
-            <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/>
-        </svg>
-        <span class="text-lg font-normal">elida-z@ff.unair.ac.id</span>
-    </a>
+                    <a href="https://google.com" target="_blank" class="flex items-center gap-2 group text-[#275CAA] no-underline hover:underline transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail">
+                            <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/>
+                        </svg>
+                        <span class="text-lg font-normal">elida-z@ff.unair.ac.id</span>
+                    </a>
 
-    <div class="flex gap-6">
-        <a href="https://google.com" target="_blank" class="flex items-center gap-2 group text-[#275CAA] no-underline hover:underline transition-all">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link">
-                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-            </svg>
-            <span class="text-lg font-normal">Scholar Unair</span>
-        </a>
+                    <div class="flex gap-6">
+                        <a href="https://google.com" target="_blank" class="flex items-center gap-2 group text-[#275CAA] no-underline hover:underline transition-all">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link">
+                                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+                            </svg>
+                            <span class="text-lg font-normal">Scholar Unair</span>
+                        </a>
 
-        <a href="https://google.com" target="_blank" class="flex items-center gap-2 group text-[#275CAA] no-underline hover:underline transition-all">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link">
-                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-            </svg>
-            <span class="text-lg font-normal">Scopus</span>
-        </a>
+                        <a href="https://google.com" target="_blank" class="flex items-center gap-2 group text-[#275CAA] no-underline hover:underline transition-all">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link">
+                                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+                            </svg>
+                            <span class="text-lg font-normal">Scopus</span>
+                        </a>
 
-        <a href="https://google.com" target="_blank" class="flex items-center gap-2 group text-[#275CAA] no-underline hover:underline transition-all">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link ">
-                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-            </svg>
-            <span class="text-lg font-normal">Sinta</span>
-        </a>
+                        <a href="https://google.com" target="_blank" class="flex items-center gap-2 group text-[#275CAA] no-underline hover:underline transition-all">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link ">
+                                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+                            </svg>
+                            <span class="text-lg font-normal">Sinta</span>
+                        </a>
 
-        <a href="https://google.com" target="_blank" class="flex items-center gap-2 group text-[#275CAA] no-underline hover:underline transition-all">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link">
-                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-            </svg>
-            <span class="text-lg font-normal">Orcid</span>
-        </a>
-    </div>
-</div>
+                        <a href="https://google.com" target="_blank" class="flex items-center gap-2 group text-[#275CAA] no-underline hover:underline transition-all">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link">
+                                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+                            </svg>
+                            <span class="text-lg font-normal">Orcid</span>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
 
-
-        <section class="flex flex-col">
+        <div class="flex flex-col">
             
             <div class="flex items-center shadow-[1px_2px_4px_0px_rgba(0,21,7,0.12)] rounded-xl overflow-hidden w-fit">
                 <button onclick="openTab('education')" id="btn-education" 
@@ -183,33 +186,26 @@
                 </div>
 
             </div>
-        </section>
+        </div>
 
     </main>
-
 
     <x-footer />
 
 </div>
 
-
 <script>
 function openTab(tabId) {
-    // 1. Sembunyikan semua konten tab
     const contents = document.querySelectorAll(".tab-content");
     contents.forEach(c => c.classList.add("hidden"));
 
-    // 2. Reset semua tombol tab ke style inaktif
     const buttons = document.querySelectorAll(".tab-btn");
     buttons.forEach(b => {
         b.classList.remove("bg-[#275CAA]", "text-gray-50");
         b.classList.add("bg-gray-50", "text-neutral-700");
     });
 
-    // 3. Tampilkan konten yang dipilih
     document.getElementById(tabId).classList.remove("hidden");
-
-    // 4. Ubah tombol yang diklik menjadi style aktif
     const activeBtn = document.getElementById("btn-" + tabId);
     activeBtn.classList.remove("bg-gray-50", "text-neutral-700");
     activeBtn.classList.add("bg-[#275CAA]", "text-gray-50");
