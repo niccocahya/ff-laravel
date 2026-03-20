@@ -62,8 +62,8 @@ Route::get('/about-us/facilities-units/assessment-service-unit', function(){
     return view('about-us/facilities-units/assessment-service-unit.index');
 });
 
-Route::get('/partnerships', function(){
-    return view('partnerships.index');
+Route::get('/about-us/partnerships', function(){
+    return view('about-us/partnerships.index');
 });
 
 Route::get('/detail-dosen', function(){
