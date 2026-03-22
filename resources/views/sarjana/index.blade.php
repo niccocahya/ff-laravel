@@ -13,19 +13,19 @@
     <div class="wrapper-all w-full min-h-screen bg-[#F7FFFA] relative">
         <x-nav-prodi />
         <div class="main-home flex flex-col gap-24 pt-26">
-            <div class="heroes w-full h-[70vh] flex items-center overflow-hidden relative">
+            <div class="heroes w-full h-[82vh] flex items-center overflow-hidden relative">
                 <div class="z-40 w-full h-full flex items-center justify-center absolute">
-                    <div class="flex text-white text-center flex-col items-center justify-center w-[50%] gap-7">
+                    <div class="flex text-white text-center flex-col items-center justify-center w-[50%] gap-14">
                         <div class="head-top flex flex-col w-full items-center gap-3">
-                            <h1 class="text-5xl">Bachelor of Pharmacy & Apothecary Professional Education</h1>
-                            <h1 class="w-[50%] font-light">Developing education, research, and community service in the
+                            <h1 class="text-5xl font-medium tracking-[-1px]">Bachelor of Pharmacy & Apothecary Professional Education</h1>
+                            <h1 class="w-[55%] font-regular">Developing education, research, and community service in the
                                 field of pharmacy to support public health.</h1>
                         </div>
-                        <div class="head-top flex flex-col w-[50%]">
+                        <div class="head-top flex flex-col w-[35%]">
                             <button
                                 class="w-full p-3 rounded-md bg-[#275CAA] hover:bg-[#194d9b] transition-all duration-200">
                                 <a href="/sarjana/education">
-                                    <h1 class="text-[#F7FFFA]">Explore Academic Programs</h1>
+                                    <h1 class="text-[#F7FFFA] text-sm font-regular">Explore Academic Programs</h1>
                                 </a>
                             </button>
                         </div>
@@ -36,8 +36,8 @@
                 <img src="{{ asset('images/baner-s1.png') }}" class="w-full blur-xs object-cover z-10 absolute"
                     alt="Gedung FF">
             </div>
-            <div class="about px-28 flex flex-col gap-10">
-                <div class="main-about flex items-center gap-10">
+            <div class="about px-28 flex flex-col gap-20">
+                <div class="main-about flex items-center gap-20">
                     <div class="main-about-left flex flex-col w-[60%] gap-5">
                         <h1 class="text-4xl font-medium">Profile</h1>
                         <h1 class="text-justify">Based on the Instruction of the Minister of Higher Education and
@@ -70,7 +70,7 @@
                 </div>
                 <div class="about-programs flex">
                     <x-tabs :tabs="['bop' => 'Bachelor of Pharmacy', 'ape' => 'Apothecary Professional Education', 'iup' => 'International Undergraduate Program']">
-                        <div id="content-bop" class="tab-content gap-7 flex flex-col">
+                        <div id="content-bop" class="tab-content gap-10 flex flex-col">
                             <div class="program-top flex flex-col gap-5">
                                 <x-link-card title="About Study Program" href="https://pendidikan.unair.ac.id/v2/index.php/kalender-akademik-2/" />
                                 <h1 class="text-justify">The Bachelor of Pharmacy study program is a pioneer in developing
@@ -189,7 +189,7 @@
                             </div>
                         </div>
 
-                        <div id="content-ape" class="tab-content gap-7 flex flex-col hidden">
+                        <div id="content-ape" class="tab-content gap-10 flex flex-col hidden">
                             <div class="program-top flex flex-col gap-5">
                                 <x-link-card title="About Study Program" href="https://pendidikan.unair.ac.id/v2/index.php/kalender-akademik-2/" />
                                 <h1 class="text-justify">The Bachelor of Pharmacy study program is a pioneer in developing
@@ -308,7 +308,7 @@
                             </div>
                         </div>
 
-                        <div id="content-iup" class="tab-content gap-7 flex flex-col hidden">
+                        <div id="content-iup" class="tab-content gap-10 flex flex-col hidden">
                             <div class="program-top flex flex-col gap-5">
                                 <x-link-card title="About Study Program" href="https://pendidikan.unair.ac.id/v2/index.php/kalender-akademik-2/" />
                                 <h1 class="text-justify">The Bachelor of Pharmacy study program is a pioneer in developing

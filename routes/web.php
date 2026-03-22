@@ -173,3 +173,47 @@ Route::get('/sarjana/education/competency', function(){
 Route::get('/sarjana/education/scholarship', function(){
     return view('sarjana/education/scholarship.index');
 });
+
+Route::get('/s2mfk', function(){
+    return view('s2mfk.index');
+});
+
+Route::get('/s2mfk/about', function(){
+    return view('s2mfk/about.index');
+});
+
+Route::get('/s2mfk/collaboration', function(){
+    return view('s2mfk/collaboration.index');
+});
+
+Route::get('/s2mfk/alumni', function(){
+    return view('s2mfk/alumni.index');
+});
+
+Route::get('/s2mfk/education', function(){
+    return view('s2mfk/education.index');
+});
+
+Route::get('/s2mfk/education/competency', function(){
+    return view('s2mfk/education/competency.index');
+});
+
+Route::get('/s2mfk/education/scholarship', function(){
+    return view('s2mfk/education/scholarship.index');
+});
+
+Route::get('/s2mfk/education/staff', function(){
+    return view('s2mfk/education/staff.index');
+});
+
+Route::get('/s2mfk/news-events/news', function(){
+    return view('s2mfk/news-events/news.index');
+});
+
+Route::get('/s2mfk/news-events/events', function(){
+    return view('s2mfk/news-events/events.index');
+});
+
+Route::get('/s2mfk/news', function(){
+    return view('s2mfk/news.index');
+});
