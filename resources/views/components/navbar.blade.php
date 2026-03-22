@@ -86,7 +86,7 @@
     ]" />
             <x-nav-accordion title="Academics" :items="[
         ['label' => 'Bachelor of Pharmacy and Apothecary Professional Education', 'link' => '/sarjana'],
-        ['label' => 'Master of Clinical Pharmacy', 'link' => '/#'],
+        ['label' => 'Master of Clinical Pharmacy', 'link' => '/s2mfk'],
         ['label' => 'Master of Pharmaceutical Sciences', 'link' => '#'],
         ['label' => 'Doctor of Pharmaceutical Sciences', 'link' => '#'],
         ['label' => 'Calendar and Schedule', 'link' => '/academics/calendar-schedule'],
