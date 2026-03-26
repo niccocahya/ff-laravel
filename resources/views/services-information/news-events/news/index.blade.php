@@ -20,40 +20,48 @@
 
     <div class="w-full flex flex-col pt-16 fade-in">
         
-        <div class="w-full h-[45vh] bg-gradient-to-r from-[#275CAA] to-[#2E9853] px-28 py-20 flex flex-col justify-center text-white">
-            <div class="flex items-center gap-2 mb-4">
-                <h1 class="text-5xl font-semibold">News and Events</h1>
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 opacity-80 mt-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                </svg>
-            </div>
-            <p class="w-1/2 text-sm leading-relaxed text-gray-100">
-                Stay updated with key academic dates, lecture schedules, and important events throughout the semester.
-            </p>
-        </div>
+        <x-hero-section 
+            title="News and Events" 
+            description="Stay updated with key academic dates, lecture schedules, and important events throughout the semester." 
+        />
 
         <x-pagination-news-events active="news" />
 
         <div class="px-28 pb-8 flex gap-4 w-full">
-            <input type="text" placeholder="Search..."
-                class="flex-grow rounded-lg border border-gray-300 px-4 py-2.5 text-sm bg-white focus:outline-none focus:border-[#275CAA] transition-colors">
+            <input type="text" placeholder="Search..." 
+                class="flex-grow rounded-lg border border-[#3D3D3D] px-4 py-3 text-sm focus:outline-none focus:border-[#3D3D3D] transition-colors bg-transparent">
             
             <div class="relative">
-                <select class="w-40 appearance-none rounded-lg border border-gray-300 px-4 py-2.5 pr-10 text-sm bg-white focus:outline-none focus:border-[#275CAA] cursor-pointer text-gray-600">
+                <select class="w-40 appearance-none rounded-lg border border-[#3D3D3D] px-4 py-3 pr-10 text-sm focus:outline-none focus:border-[#3D3D3D] transition-colors bg-transparent cursor-pointer text-gray-600">
                     <option>All Months</option>
                     <option>January</option>
                     <option>February</option>
-                </select>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                    </select>
                 <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-500">
                     <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </div>
             </div>
 
             <div class="relative">
-                <select class="w-40 appearance-none rounded-lg border border-gray-300 px-4 py-2.5 pr-10 text-sm bg-white focus:outline-none focus:border-[#275CAA] cursor-pointer text-gray-600">
+                <select class="w-40 appearance-none rounded-lg border border-[#3D3D3D] px-4 py-3 pr-10 text-sm focus:outline-none focus:border-[#3D3D3D] transition-colors bg-transparent cursor-pointer text-gray-600">
                     <option>All Year</option>
                     <option>2025</option>
                     <option>2024</option>
+                    <option>2023</option>
+                    <option>2022</option>
+                    <option>2021</option>
+                    <option>2020</option>
+                    <option>2019</option>
                 </select>
                 <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-500">
                     <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
@@ -68,7 +76,7 @@
         <div class="px-28 pb-12 flex flex-col gap-10">
             
             <a href="/news" class="block w-full h-[450px] rounded-3xl overflow-hidden relative group cursor-pointer shadow-md bg-gray-200">
-                <img src="{{ asset('images/agak-laen.png') }}" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <img src="{{ asset('images/agak-laen.png') }}" alt="" class="w-full h-full object-cover duration-700">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
                 <div class="absolute bottom-10 left-10 right-10 text-white">
                     <p class="text-sm font-medium mb-3 opacity-90">05/01/2026</p>
@@ -81,28 +89,28 @@
             <div class="grid grid-cols-3 gap-6">
                 <a href="/news" class="flex flex-col group cursor-pointer">
                     <div class="w-full aspect-[4/3] rounded-2xl overflow-hidden mb-4 bg-gray-200 shadow-sm">
-                        <img src="{{ asset('images/agak-laen.png') }}" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="{{ asset('images/agak-laen.png') }}" alt="" class="w-full h-full object-cover duration-500">
                     </div>
                     <p class="text-[13px] text-gray-500 mb-2">05/01/2026</p>
-                    <h3 class="font-semibold text-[#1E293B] text-[17px] leading-snug group-hover:text-[#275CAA] transition-colors line-clamp-3">
+                    <h3 class="font-semibold text-[#1E293B] text-[17px] leading-snug line-clamp-3">
                         [Ini AGAK LAEN! MENYALA FARMASIKU!] Visit the FF UNAIR Booth at AEE 2026
                     </h3>
                 </a>
                 <a href="/news" class="flex flex-col group cursor-pointer">
                     <div class="w-full aspect-[4/3] rounded-2xl overflow-hidden mb-4 bg-gray-200 shadow-sm">
-                        <img src="{{ asset('images/agak-laen.png') }}" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="{{ asset('images/agak-laen.png') }}" alt="" class="w-full h-full object-cover duration-500">
                     </div>
                     <p class="text-[13px] text-gray-500 mb-2">05/01/2026</p>
-                    <h3 class="font-semibold text-[#1E293B] text-[17px] leading-snug group-hover:text-[#275CAA] transition-colors line-clamp-3">
+                    <h3 class="font-semibold text-[#1E293B] text-[17px] leading-snug line-clamp-3">
                         [Ini AGAK LAEN! MENYALA FARMASIKU!] Visit the FF UNAIR Booth at AEE 2026
                     </h3>
                 </a>
                 <a href="/news" class="flex flex-col group cursor-pointer">
                     <div class="w-full aspect-[4/3] rounded-2xl overflow-hidden mb-4 bg-gray-200 shadow-sm">
-                        <img src="{{ asset('images/agak-laen.png') }}" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="{{ asset('images/agak-laen.png') }}" alt="" class="w-full h-full object-cover duration-500">
                     </div>
                     <p class="text-[13px] text-gray-500 mb-2">05/01/2026</p>
-                    <h3 class="font-semibold text-[#1E293B] text-[17px] leading-snug group-hover:text-[#275CAA] transition-colors line-clamp-3">
+                    <h3 class="font-semibold text-[#1E293B] text-[17px] leading-snug line-clamp-3">
                         [Ini AGAK LAEN! MENYALA FARMASIKU!] Visit the FF UNAIR Booth at AEE 2026
                     </h3>
                 </a>
@@ -111,37 +119,37 @@
             <div class="grid grid-cols-4 gap-6">
                 <a href="/news" class="flex flex-col group cursor-pointer">
                     <div class="w-full aspect-[4/3] rounded-2xl overflow-hidden mb-4 bg-gray-200 shadow-sm">
-                        <img src="{{ asset('images/agak-laen.png') }}" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="{{ asset('images/agak-laen.png') }}" alt="" class="w-full h-full object-cover duration-500">
                     </div>
                     <p class="text-[12px] text-gray-500 mb-1.5">05/01/2026</p>
-                    <h3 class="font-semibold text-[#1E293B] text-[15px] leading-snug group-hover:text-[#275CAA] transition-colors line-clamp-3">
+                    <h3 class="font-semibold text-[#1E293B] text-[15px] leading-snug line-clamp-3">
                         [Ini AGAK LAEN! MENYALA FARMASIKU!] Visit the FF UNAIR Booth at AEE 2026
                     </h3>
                 </a>
                 <a href="/news" class="flex flex-col group cursor-pointer">
                     <div class="w-full aspect-[4/3] rounded-2xl overflow-hidden mb-4 bg-gray-200 shadow-sm">
-                        <img src="{{ asset('images/agak-laen.png') }}" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="{{ asset('images/agak-laen.png') }}" alt="" class="w-full h-full object-cover duration-500">
                     </div>
                     <p class="text-[12px] text-gray-500 mb-1.5">05/01/2026</p>
-                    <h3 class="font-semibold text-[#1E293B] text-[15px] leading-snug group-hover:text-[#275CAA] transition-colors line-clamp-3">
+                    <h3 class="font-semibold text-[#1E293B] text-[15px] leading-snug line-clamp-3">
                         [Ini AGAK LAEN! MENYALA FARMASIKU!] Visit the FF UNAIR Booth at AEE 2026
                     </h3>
                 </a>
                 <a href="/news" class="flex flex-col group cursor-pointer">
                     <div class="w-full aspect-[4/3] rounded-2xl overflow-hidden mb-4 bg-gray-200 shadow-sm">
-                        <img src="{{ asset('images/agak-laen.png') }}" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="{{ asset('images/agak-laen.png') }}" alt="" class="w-full h-full object-cover duration-500">
                     </div>
                     <p class="text-[12px] text-gray-500 mb-1.5">05/01/2026</p>
-                    <h3 class="font-semibold text-[#1E293B] text-[15px] leading-snug group-hover:text-[#275CAA] transition-colors line-clamp-3">
+                    <h3 class="font-semibold text-[#1E293B] text-[15px] leading-snug line-clamp-3">
                         [Ini AGAK LAEN! MENYALA FARMASIKU!] Visit the FF UNAIR Booth at AEE 2026
                     </h3>
                 </a>
                 <a href="/news" class="flex flex-col group cursor-pointer">
                     <div class="w-full aspect-[4/3] rounded-2xl overflow-hidden mb-4 bg-gray-200 shadow-sm">
-                        <img src="{{ asset('images/agak-laen.png') }}" alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <img src="{{ asset('images/agak-laen.png') }}" alt="" class="w-full h-full object-cover duration-500">
                     </div>
                     <p class="text-[12px] text-gray-500 mb-1.5">05/01/2026</p>
-                    <h3 class="font-semibold text-[#1E293B] text-[15px] leading-snug group-hover:text-[#275CAA] transition-colors line-clamp-3">
+                    <h3 class="font-semibold text-[#1E293B] text-[15px] leading-snug line-clamp-3">
                         [Ini AGAK LAEN! MENYALA FARMASIKU!] Visit the FF UNAIR Booth at AEE 2026
                     </h3>
                 </a>

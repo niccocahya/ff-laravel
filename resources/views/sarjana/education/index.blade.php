@@ -26,8 +26,8 @@
                 <div class="header-top flex items-end gap-3">
                     <h1 class="text-5xl font-medium">Education</h1>
                 </div>
-                <h1 class="w-[50%] text-justify text-sm leading-relaxed">
-                    Leading the development of Pharmaceutical Science Technology and Clinical-Community Pharmacy through innovative education and global collaboration.
+                <h1 class="w-[50%] text-justify">
+                    Leading the development of Pharmaceutical Science-Technology and Clinical-Community Pharmacy through innovative education and global collaboration.
                 </h1>
             </div>
 

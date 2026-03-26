@@ -20,16 +20,11 @@
     <div class="wrapper-all w-full min-h-screen bg-[#F7FFFA] relative">
         <x-navbar />
         <div class="main-calendar flex flex-col pt-16">
-            
-            <div class="heroes h-[45vh] w-full gap-5 text-white bg-gradient-to-r from-[#275CAA] via-[#275CAA] to-[#2E9853] px-28 flex flex-col justify-center">
-                <div class="header-top flex items-end gap-3">
-                    <h1 class="text-5xl font-medium">PPID</h1>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 mb-1 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                    </svg>
-                </div>
-                <h1 class="w-[50%] text-justify">An overview of the faculty's vision, mission, history, and commitment in advancing education, research, and community service in the field of pharmacy to support public health development.</h1>
-            </div>
+
+            <x-hero-section 
+                title="PPID" 
+                description="An overview of the faculty's vision, mission, history, and commitment in advancing education, research, and community service in the field of pharmacy to support public health development." 
+            />
 
             <div class="fade-in py-14 px-28 flex flex-col gap-10 bg-[#F7FFFA]">
                 

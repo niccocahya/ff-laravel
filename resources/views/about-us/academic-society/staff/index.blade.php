@@ -21,24 +21,18 @@
 
     <div class="main-home flex flex-col pt-16">
         
-        <div class="h-[45vh] w-full gap-5 text-white bg-gradient-to-r from-[#275CAA] via-[#275CAA] to-[#2E9853] px-28 flex flex-col justify-center">
-            <div class="header-top flex items-end gap-3">
-                <h1 class="text-5xl font-medium">Academic Society</h1>
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#ffffff" viewBox="0 0 256 256">
-                    <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
-                </svg>
-            </div>
-            <h1 class="w-[55%] text-justify text-sm leading-relaxed">
-                Details about lecturers, students, education staff, and alumni who contribute to the academic
-                environment and the development of excellence in pharmacy education.
-            </h1>
-        </div>
+        <x-hero-section 
+            title="Academic Society" 
+            description="Details about lecturers, students, education staff, and alumni who contribute to the academic
+                environment and the development of excellence in pharmacy education." 
+        />
+        
         <x-pagination-academic-society active="staff" />
         <div id="dept-staff" class="fade-in block">
             
             <div class="px-28 pt-4 pb-10 flex gap-4 w-full">
                 <input type="text" placeholder="Search..." 
-                    class="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:border-[#275CAA] transition-colors bg-white">
+                    class="w-full rounded-lg border border-[#3D3D3D] px-4 py-3 text-sm focus:outline-none transition-colors bg-transparent">
                 <button class="bg-[#275CAA] hover:bg-[#1d4f96] text-white px-8 py-3 rounded-lg text-sm font-medium transition-colors">
                     Browse
                 </button>

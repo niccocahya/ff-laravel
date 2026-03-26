@@ -2,7 +2,7 @@
     'active' => ''
 ])
 
-<div class="w-full flex gap-4 mb-6">
+<div class="w-full flex gap-5 mb-6">
     <a href="/sarjana/education"
         class="px-6 py-2 rounded-full text-sm font-base transition-all shadow-sm text-center
         {{ $active === 'curriculum'
