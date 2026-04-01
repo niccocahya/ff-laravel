@@ -4,28 +4,26 @@
  'id' => uniqid()
 ])
 
-<div class="w-full flex flex-col gap-5" id="accordion-{{ $id }}">
+<div class="w-full flex flex-col gap-4 md:gap-5" id="accordion-{{ $id }}">
  
  <button 
   onclick="toggleAccordion{{ $id }}()"
-  class="flex items-center justify-between w-full gap-10 text-left cursor-pointer"
+  class="flex items-start md:items-center justify-between w-full gap-4 md:gap-10 text-left cursor-pointer"
  >
-  <div class="w-[40%] flex flex-col gap-5">
-   <h1 class="text-4xl font-medium">
+  <div class="w-full md:w-[70%] lg:w-[40%] flex flex-col gap-2 md:gap-5 pr-2 md:pr-0">
+   <h1 class="text-2xl md:text-3xl lg:text-4xl font-medium text-gray-800">
     {{ $title }}
    </h1>
 
-   <p class="text-justify">
+   <p class="text-sm md:text-base text-justify text-gray-600">
     {{ $description }}
    </p>
   </div>
 
   <svg 
    id="icon-{{ $id }}"
-   class="transform transition-transform duration-300"
+   class="w-10 h-10 md:w-14 md:h-14 lg:w-[60px] lg:h-[60px] shrink-0 transform transition-transform duration-300 mt-1 md:mt-0"
    xmlns="http://www.w3.org/2000/svg"
-   width="60"
-   height="60"
    fill="#0a0000"
    viewBox="0 0 256 256"
   >
@@ -37,12 +35,12 @@
 
   <div 
   id="content-{{ $id }}"
-  class="w-full overflow-hidden transition-all duration-500 ease-in-out max-h-0"
+  class="w-full overflow-hidden transition-all duration-500 ease-in-out max-h-0 text-sm md:text-base text-gray-700"
  >
   {{ $slot }}
  </div>
 
- <div class="w-full mt-2 bg-black h-[1px] rounded-full"></div>
+ <div class="w-full mt-1 md:mt-2 bg-black h-[1px] rounded-full opacity-30"></div>
 
 </div>
 

@@ -3,20 +3,18 @@
  'id' => uniqid()
 ])
 
-<div class="flex flex-col gap-3" id="accordion-{{ $id }}">
+<div class="flex flex-col gap-2 md:gap-3 w-full" id="accordion-{{ $id }}">
  
  <button 
   onclick="toggleAccordion{{ $id }}()"
-  class="flex justify-between items-center w-full text-left cursor-pointer"
+  class="flex justify-between items-center w-full text-left cursor-pointer gap-4"
  >
-  <h1 class="text-2xl">{{ $title }}</h1>
+  <h1 class="text-lg md:text-xl lg:text-2xl font-medium pr-2">{{ $title }}</h1>
 
   <svg 
    id="icon-{{ $id }}"
-   class="transform transition-transform duration-300"
+   class="w-8 h-8 md:w-10 md:h-10 lg:w-11 lg:h-11 shrink-0 transform transition-transform duration-300"
    xmlns="http://www.w3.org/2000/svg"
-   width="44"
-   height="44"
    fill="#0a0000"
    viewBox="0 0 256 256"
   >
@@ -28,12 +26,12 @@
 
   <div 
   id="content-{{ $id }}"
-  class="overflow-hidden transition-all duration-500 ease-in-out max-h-0"
+  class="overflow-hidden transition-all duration-500 ease-in-out max-h-0 text-sm md:text-base text-gray-700"
  >
   {{ $slot }}
  </div>
 
- <div class="w-full mt-2 bg-black h-[1px] rounded-full"></div>
+ <div class="w-full mt-1 md:mt-2 bg-black h-[1px] rounded-full opacity-30"></div>
 </div>
 
 <script>

@@ -2,10 +2,10 @@
     'active' => ''
 ])
 
-<div class="px-28 py-10 flex gap-5 bg-[#F7FFFA]">
+<div class="px-6 md:px-14 lg:px-28 py-6 md:py-10 flex gap-3 md:gap-5 bg-[#F7FFFA] overflow-x-auto scrollbar-hide">
 
     <a href="/about-us/facilities-units"
-        class="px-6 py-2 rounded-full text-sm transition-all duration-200
+        class="whitespace-nowrap shrink-0 px-5 md:px-6 py-2 rounded-full text-sm transition-all duration-200
         {{ $active === 'facilities'
     ? 'bg-[#275CAA] text-white hover:bg-[#1d4f96]'
     : 'border border-[#275CAA] text-[#275CAA] hover:bg-[#275CAA] hover:text-white' }}">
@@ -13,7 +13,7 @@
     </a>
 
     <a href="/about-us/facilities-units/reading-room-collection-books"
-        class="px-6 py-2 rounded-full text-sm transition-all duration-200
+        class="whitespace-nowrap shrink-0 px-5 md:px-6 py-2 rounded-full text-sm transition-all duration-200
         {{ $active === 'reading-room'
     ? 'bg-[#275CAA] text-white hover:bg-[#1d4f96]'
     : 'border border-[#275CAA] text-[#275CAA] hover:bg-[#275CAA] hover:text-white' }}">
@@ -21,7 +21,7 @@
     </a>
 
     <a href="/about-us/facilities-units/thesis-list-collection"
-        class="px-6 py-2 rounded-full text-sm transition-all duration-200
+        class="whitespace-nowrap shrink-0 px-5 md:px-6 py-2 rounded-full text-sm transition-all duration-200
         {{ $active === 'thesis'
     ? 'bg-[#275CAA] text-white hover:bg-[#1d4f96]'
     : 'border border-[#275CAA] text-[#275CAA] hover:bg-[#275CAA] hover:text-white' }}">
@@ -29,7 +29,7 @@
     </a>
 
     <a href="/about-us/facilities-units/apotek-farmasi"
-        class="px-6 py-2 rounded-full text-sm transition-all duration-200
+        class="whitespace-nowrap shrink-0 px-5 md:px-6 py-2 rounded-full text-sm transition-all duration-200
         {{ $active === 'pharmacy'
     ? 'bg-[#275CAA] text-white hover:bg-[#1d4f96]'
     : 'border border-[#275CAA] text-[#275CAA] hover:bg-[#275CAA] hover:text-white' }}">
@@ -37,7 +37,7 @@
     </a>
 
     <a href="/about-us/facilities-units/assessment-service-unit"
-        class="px-6 py-2 rounded-full text-sm transition-all duration-200
+        class="whitespace-nowrap shrink-0 px-5 md:px-6 py-2 rounded-full text-sm transition-all duration-200
         {{ $active === 'assessment'
     ? 'bg-[#275CAA] text-white hover:bg-[#1d4f96]'
     : 'border border-[#275CAA] text-[#275CAA] hover:bg-[#275CAA] hover:text-white' }}">
@@ -45,3 +45,13 @@
     </a>
 
 </div>
+
+<style>
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+</style>
