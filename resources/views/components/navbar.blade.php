@@ -1,5 +1,5 @@
 <nav id="main-nav"
-    class="fixed top-0 left-0 w-full h-16 bg-[#275CAA] flex flex-col p-3 px-10 md:px-20 transition-all duration-500 ease-in-out z-50 overflow-hidden">
+    class="fixed top-0 left-0 w-full h-16 bg-[#275CAA] flex flex-col p-3 px-4 md:px-10 lg:px-20 transition-all duration-500 ease-in-out z-50 overflow-hidden">
 
     <div class="flex flex-row justify-between items-center w-full h-10 min-h-[40px]">
         <a href="/">
@@ -19,7 +19,7 @@
                 </button>
             </a>
 
-            <div id="menu-btn" class="cursor-pointer">
+            <div id="menu-btn" class="cursor-pointer ml-2 md:ml-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
                     stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="transition-transform duration-300">
@@ -32,19 +32,23 @@
     </div>
 
     <div id="menu-content"
-        class="opacity-0 invisible w-full transition-all py-14 duration-500 flex justify-between flex-grow gap-8 text-[#F7FFFA] overflow-y-auto h-full overscroll-contain scrollbar-hide">
-        <div class="nav-menu-left w-[30%] pl-14 flex flex-col gap-7">
+        class="opacity-0 invisible w-full transition-all py-10 md:py-14 duration-500 flex flex-col md:flex-row justify-between flex-grow gap-0 md:gap-8 text-[#F7FFFA] overflow-y-auto h-full overscroll-contain scrollbar-hide">
+
+        <div
+            class="nav-menu-left w-full md:w-[30%] px-4 md:px-0 md:pl-14 flex flex-col gap-7 order-2 md:order-1 pt-10 md:pt-0">
             <a href="https://unair.ac.id/" class="font-light underline-offset-3 hover:underline">UNAIR's Official
                 Website</a>
+
             <div class="acad-portals flex flex-col">
-                <h1 class="text-xl font-medium">Academic Portals</h1>
+                <h1 class="text-xl font-medium mb-1">Academic Portals</h1>
                 <a href="https://mahasiswa.unair.ac.id/"
                     class="font-light underline-offset-3 hover:underline">Cybercampus</a>
                 <a href="https://hebat.elearning.unair.ac.id/"
                     class="font-light underline-offset-3 hover:underline">Hebat e-learning</a>
             </div>
+
             <div class="students-portals flex flex-col">
-                <h1 class="text-xl font-medium">Students Portals</h1>
+                <h1 class="text-xl font-medium mb-1">Students Portals</h1>
                 <a href="https://ailis.lib.unair.ac.id/" class="font-light underline-offset-3 hover:underline">Airlangga
                     Integrated Library Systems</a>
                 <a href="https://pusatbahasa.unair.ac.id/" class="font-light underline-offset-3 hover:underline">Pusat
@@ -52,8 +56,9 @@
                 <a href="https://ff.unair.ac.id/susiakad/"
                     class="font-light underline-offset-3 hover:underline">SUSIAKAD</a>
             </div>
+
             <div class="lecturer-portals flex flex-col">
-                <h1 class="text-xl font-medium">Lecturer Portals</h1>
+                <h1 class="text-xl font-medium mb-1">Lecturer Portals</h1>
                 <a href="https://bima.kemdiktisaintek.go.id/"
                     class="font-light underline-offset-3 hover:underline">BIMA</a>
                 <a href="https://amerta.lppm.unair.ac.id/"
@@ -65,8 +70,9 @@
                 <a href="https://sinta.kemdiktisaintek.go.id/"
                     class="font-light underline-offset-3 hover:underline">SINTA</a>
             </div>
+
             <div class="quick-links flex flex-col">
-                <h1 class="text-xl font-medium">Quick Links</h1>
+                <h1 class="text-xl font-medium mb-1">Quick Links</h1>
                 <a href="/services-information/forms-downloads/forms"
                     class="font-light underline-offset-3 hover:underline">Accreditation</a>
                 <a href="/faculty-profile/integrity-zone"
@@ -75,8 +81,18 @@
                 <a href="/academics/calendar-schedule" class="font-light underline-offset-3 hover:underline">Academic
                     Calendar</a>
             </div>
+
+            <a href="https://ppmb.unair.ac.id/" class="md:hidden mt-4 pb-20">
+                <button
+                    class="w-full px-8 bg-[#F7FFFA] border border-transparent hover:border-[#F7FFFA] hover:text-[#F7FFFA] transition-all duration-200 hover:bg-[#275CAA] text-[#275CAA] rounded-lg font-semibold py-3">
+                    Apply Now
+                </button>
+            </a>
         </div>
-        <div class="nav-menu-right border-l-[1px] h-full border-white flex-1 flex flex-col">
+
+        <div
+            class="nav-menu-right w-full flex-1 flex flex-col border-b md:border-b-0 border-white pb-10 md:pb-0 mb-10 md:mb-0 md:border-l-[1px] h-full md:border-white px-0 md:px-0 order-1 md:order-2">
+
             <x-nav-accordion title="About Us" :items="[
         ['label' => 'Faculty Profile', 'link' => '/about-us/faculty-profile'],
         ['label' => 'Leadership and Organization', 'link' => '/about-us/leadership-organization'],
@@ -126,6 +142,7 @@
         scrollbar-width: none;
     }
 </style>
+
 <script>
     function toggleNavAccordion(header) {
         const content = header.nextElementSibling;
@@ -157,9 +174,9 @@
         menuContent.classList.toggle('visible');
 
         if (mainNav.classList.contains('h-screen')) {
-            line1.setAttribute('d', 'M6 6L18 18');  
-            line2.setAttribute('d', 'M6 6L18 18'); 
-            line3.setAttribute('d', 'M6 18L18 6'); 
+            line1.setAttribute('d', 'M6 6L18 18');
+            line2.setAttribute('d', 'M6 6L18 18');
+            line3.setAttribute('d', 'M6 18L18 6');
 
             line1.style.opacity = '1';
             line2.style.opacity = '0';
@@ -168,9 +185,9 @@
             line1.style.transform = 'rotate(0deg)';
             line3.style.transform = 'rotate(0deg)';
         } else {
-            line1.setAttribute('d', 'M4 6h16');   
-            line2.setAttribute('d', 'M4 12h16'); 
-            line3.setAttribute('d', 'M4 18h16'); 
+            line1.setAttribute('d', 'M4 6h16');
+            line2.setAttribute('d', 'M4 12h16');
+            line3.setAttribute('d', 'M4 18h16');
 
             line1.style.opacity = '1';
             line2.style.opacity = '1';

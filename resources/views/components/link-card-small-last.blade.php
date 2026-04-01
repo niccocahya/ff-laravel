@@ -4,26 +4,24 @@
     'href' => '#'
 ])
 
-<div class="w-full flex flex-col gap-3 items-center" id="accordion-{{ $id }}">
+<div class="w-full flex flex-col gap-2 md:gap-3 items-center" id="accordion-{{ $id }}">
     
     <a 
-    href="{{ $href }}"
+        href="{{ $href }}"
         onclick="toggleAccordion{{ $id }}()"
-        class="flex items-center justify-between w-full gap-10 text-left"
+        class="flex items-start md:items-center justify-between w-full gap-4 md:gap-10 text-left cursor-pointer group"
     >
-        <div class="w-full flex flex-col gap-3">
-            <h1 class="text-2xl">
+        <div class="w-full flex flex-col gap-2 md:gap-3 pr-2 md:pr-0">
+            <h3 class="text-lg md:text-xl lg:text-2xl font-medium text-gray-800 group-hover:text-[#275CAA] transition-colors duration-200">
                 {{ $title }}
-            </h1>
+            </h3>
         </div>
 
         <svg 
             id="icon-{{ $id }}"
-            class="transform transition-all duration-200 rotate-[-45deg]"
+            class="w-8 h-8 md:w-10 md:h-10 lg:w-[44px] lg:h-[44px] shrink-0 transform transition-all duration-300 rotate-[-45deg] text-[#0a0000] group-hover:text-[#275CAA] group-hover:translate-x-1 group-hover:-translate-y-1 mt-0.5 md:mt-0"
             xmlns="http://www.w3.org/2000/svg"
-            width="44"
-            height="44"
-            fill="#0a0000"
+            fill="currentColor"
             viewBox="0 0 256 256"
         >
             <path

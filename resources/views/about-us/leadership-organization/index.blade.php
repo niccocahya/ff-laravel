@@ -109,7 +109,7 @@
                         @endphp
                         @foreach ($heads as $head)
                         <div class="w-full h-[402px] relative bg-gray-50 rounded-xl shadow-md overflow-hidden">
-                            <img class="w-full h-full object-cover" src="{{ asset($head['img']) }}" onerror="this.src='https://placehold.co/278x402?text=Photo'">
+                            <img class="w-full h-full object-cover" src="{{ asset($head['img']) }}" onerror=`this.src='https://placehold.co/278x402?text=Photo'`>
                             <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-neutral-950/0 to-transparent"></div>
                             <div class="absolute bottom-0 left-0 w-full p-6 flex flex-col gap-1">
                                 <div class="text-gray-50 text-[18px] font-bold leading-tight">{{ $head['name'] }}</div>
