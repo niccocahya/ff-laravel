@@ -261,3 +261,47 @@ Route::get('/s2mif/education/scholarship', function(){
 Route::get('/s2mif/education/student-mobility', function(){
     return view('s2mif/education/student-mobility.index');
 });
+
+Route::get('/s3dif', function(){
+    return view('s3dif.index');
+});
+
+Route::get('/s3dif/about', function(){
+    return view('s3dif/about.index');
+});
+
+Route::get('/s3dif/news-events/news', function(){
+    return view('s3dif/news-events/news.index');
+});
+
+Route::get('/s3dif/news-events/events', function(){
+    return view('s3dif/news-events/events.index');
+});
+
+Route::get('/s3dif/collaboration', function(){
+    return view('s3dif/collaboration.index');
+});
+
+Route::get('/s3dif/alumni', function(){
+    return view('s3dif/alumni.index');
+});
+
+Route::get('/s3dif/education', function(){
+    return view('s3dif/education.index');
+});
+
+Route::get('/s3dif/education/staff', function(){
+    return view('s3dif/education/staff.index');
+});
+
+Route::get('/s3dif/education/competency', function(){
+    return view('s3dif/education/competency.index');
+});
+
+Route::get('/s3dif/education/scholarship', function(){
+    return view('s3dif/education/scholarship.index');
+});
+
+Route::get('/s3dif/education/promotor', function(){
+    return view('s3dif/education/promotor.index');
+});
