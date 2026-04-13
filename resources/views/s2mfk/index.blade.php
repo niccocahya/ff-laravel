@@ -11,7 +11,7 @@
 
 <body>
     <div class="wrapper-all w-full min-h-screen bg-[#F7FFFA] relative">
-        <x-nav-prodi />
+        <x-nav-prodi-s2mfk />
         <div class="main-home flex flex-col gap-24 pt-26">
             <div class="heroes w-full h-[82vh] flex items-center overflow-hidden relative">
                 <div class="z-40 w-full h-full flex items-center justify-center absolute">

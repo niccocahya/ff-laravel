@@ -30,7 +30,7 @@
 
 <body>
     <div class="wrapper-all w-full min-h-screen bg-[#F7FFFA] relative">
-        <x-nav-prodi />
+        <x-nav-prodi-s2mfk />
 
         <div class="main-leadership flex flex-col pt-26">
             

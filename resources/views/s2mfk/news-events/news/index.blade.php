@@ -16,7 +16,7 @@
 </head>
 <body class="bg-[#F7FFFA] min-h-screen font-sans">
 
-    <x-nav-prodi />
+    <x-nav-prodi-s2mfk/>
 
     <div class="w-full flex flex-col pt-16 fade-in">
         
