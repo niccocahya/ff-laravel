@@ -27,18 +27,18 @@
                 description="Stay updated with key academic dates, lecture schedules, and important events throughout the semester." 
             />
 
-            <div class="fade-in py-14 px-28 flex flex-col gap-10 bg-[#F7FFFA]">
+            <div class="fade-in py-10 md:py-14 px-6 md:px-16 lg:px-28 flex flex-col gap-8 md:gap-10 bg-[#F7FFFA]">
                 
-                <div class="w-full flex gap-4">
+                <div class="w-full flex flex-row items-center gap-3">
                     <input type="text" placeholder="Search..." 
-                        class="flex-grow rounded-lg border border-[#3D3D3D] px-4 py-3 text-sm focus:outline-none focus:border-[#3D3D3D] transition-colors bg-transparent">
-                    <button class="bg-[#275CAA] hover:bg-[#1d4f96] text-white px-12 py-3 rounded-lg text-sm font-medium transition-colors shadow-sm">
+                        class="flex-grow w-full rounded-lg border border-[#3D3D3D] px-4 py-3 text-sm focus:outline-none focus:border-[#3D3D3D] transition-colors bg-transparent">
+                    <button class="bg-[#275CAA] hover:bg-[#1d4f96] text-white px-6 md:px-12 py-3 rounded-lg text-sm font-medium transition-colors shadow-sm shrink-0">
                         Browse
                     </button>
                 </div>
                 
-                <div class="w-full flex flex-col gap-7 pt-2">
-                    <div class="flex flex-col gap-5">
+                <div class="w-full flex flex-col gap-5 md:gap-7 pt-2">
+                    <div class="flex flex-col gap-3 md:gap-5">
                         <x-link-card-small title="Cybercampus" href="#" />
                         <x-link-card-small title="Diseminasi terkait Bisphenol A (BPA)" href="#" />
                         <x-link-card-small title="E-Journal" href="#" />

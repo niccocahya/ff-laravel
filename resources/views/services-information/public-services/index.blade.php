@@ -28,18 +28,18 @@
                     events throughout the semester." 
             />
 
-            <div class="fade-in py-14 px-28 flex flex-col gap-12 bg-[#F7FFFA]">
+            <div class="fade-in py-10 md:py-14 px-6 md:px-16 lg:px-28 flex flex-col gap-8 md:gap-12 bg-[#F7FFFA]">
                 
-                <div class="w-full flex justify-center py-4">
-                    <img src="{{ asset('images/maklumat-pelayanan.png') }}" alt="Maklumat Pelayanan Informasi Publik" class="w-[85%] rounded-2xl shadow-md border border-gray-100">
+                <div class="w-full flex justify-center py-2 md:py-4">
+                    <img src="{{ asset('images/maklumat-pelayanan.png') }}" alt="Maklumat Pelayanan Informasi Publik" class="w-full md:w-[85%] rounded-2xl shadow-md border border-gray-100">
                 </div>
                 
-                <div class="w-full flex flex-col gap-7 pt-4">
-                    <h1 class="text-3xl font-medium text-[#1E293B]">
+                <div class="w-full flex flex-col gap-5 md:gap-7 pt-2 md:pt-4">
+                    <h1 class="text-2xl md:text-3xl font-medium text-[#1E293B]">
                         Types of Public Services
                     </h1>
                     
-                    <div class="flex flex-col gap-5">
+                    <div class="flex flex-col gap-3 md:gap-5">
                         <x-link-card-small title="Internship Standard Operating Procedures" href="#" />
                         <x-link-card-small title="Internship Permit Application Form for Internship 1 and 2" href="#" />
                         <x-link-card-small title="Diploma Legalization Processing" href="#" />
