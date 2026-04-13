@@ -11,7 +11,7 @@
 
 <body>
     <div class="wrapper-all w-full min-h-screen bg-[#F7FFFA] relative">
-        <x-nav-prodi />
+        <x-nav-prodi-s2mfk/>
         <div class="main-calendar flex flex-col pt-26">
             <x-hero-section title='Alumni'
                 description='Leading the development of Pharmaceutical Science-Technology and Clinical-Community Pharmacy through innovative education and global collaboration.' />

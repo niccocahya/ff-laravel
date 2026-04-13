@@ -27,7 +27,7 @@
 
 <body>
     <div class="wrapper-all w-full min-h-screen bg-[#F7FFFA] relative">
-        <x-nav-prodi />
+        <x-nav-prodi-s2mfk />
         
         <div class="main-calendar flex flex-col pt-26">
             
@@ -36,7 +36,7 @@
 
             <div class="fade-in py-14 px-28 flex flex-col gap-10 bg-[#F7FFFA]">
                 
-                <x-pagination-sarjana-education active="competency" />
+                <x-pagination-s2mfk-education active="competency" />
 
                 <div class="w-full flex flex-col gap-10 pt-2">
                     

@@ -11,7 +11,7 @@
 
 <body>
     <div class="wrapper-all w-full min-h-screen bg-[#F7FFFA] relative">
-        <x-nav-prodi/>
+        <x-nav-prodi-s2mfk/>
         <div class="main-news flex flex-col w-full gap-16 py-16 px-28">
             <div class="news-main pt-14 flex w-full">
                 <a href="{{ url()->previous() }}">
