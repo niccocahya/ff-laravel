@@ -217,3 +217,47 @@ Route::get('/s2mfk/news-events/events', function(){
 Route::get('/s2mfk/news', function(){
     return view('s2mfk/news.index');
 });
+
+Route::get('/s2mif', function(){
+    return view('s2mif.index');
+});
+
+Route::get('/s2mif/about', function(){
+    return view('s2mif/about.index');
+});
+
+Route::get('/s2mif/news-events/news', function(){
+    return view('s2mif/news-events/news.index');
+});
+
+Route::get('/s2mif/news-events/events', function(){
+    return view('s2mif/news-events/events.index');
+});
+
+Route::get('/s2mif/collaboration', function(){
+    return view('s2mif/collaboration.index');
+});
+
+Route::get('/s2mif/alumni', function(){
+    return view('s2mif/alumni.index');
+});
+
+Route::get('/s2mif/education', function(){
+    return view('s2mif/education.index');
+});
+
+Route::get('/s2mif/education/staff', function(){
+    return view('s2mif/education/staff.index');
+});
+
+Route::get('/s2mif/education/competency', function(){
+    return view('s2mif/education/competency.index');
+});
+
+Route::get('/s2mif/education/scholarship', function(){
+    return view('s2mif/education/scholarship.index');
+});
+
+Route::get('/s2mif/education/student-mobility', function(){
+    return view('s2mif/education/student-mobility.index');
+});

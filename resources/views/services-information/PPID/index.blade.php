@@ -20,29 +20,24 @@
     <div class="wrapper-all w-full min-h-screen bg-[#F7FFFA] relative">
         <x-navbar />
         <div class="main-calendar flex flex-col pt-16">
-            
-            <div class="heroes h-[45vh] w-full gap-5 text-white bg-gradient-to-r from-[#275CAA] via-[#275CAA] to-[#2E9853] px-28 flex flex-col justify-center">
-                <div class="header-top flex items-end gap-3">
-                    <h1 class="text-5xl font-medium">PPID</h1>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 mb-1 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                    </svg>
-                </div>
-                <h1 class="w-[50%] text-justify">An overview of the faculty's vision, mission, history, and commitment in advancing education, research, and community service in the field of pharmacy to support public health development.</h1>
-            </div>
 
-            <div class="fade-in py-14 px-28 flex flex-col gap-10 bg-[#F7FFFA]">
+            <x-hero-section 
+                title="PPID" 
+                description="An overview of the faculty's vision, mission, history, and commitment in advancing education, research, and community service in the field of pharmacy to support public health development." 
+            />
+
+            <div class="fade-in py-10 md:py-14 px-6 md:px-16 lg:px-28 flex flex-col gap-10 bg-[#F7FFFA]">
                 
-                <div class="w-full flex flex-col gap-7">
-                    <h1 class="text-4xl font-medium">
+                <div class="w-full flex flex-col gap-5 md:gap-7">
+                    <h1 class="text-2xl md:text-3xl lg:text-4xl font-medium">
                         PPID Faculty Of Pharmacy
                     </h1>
                     <div class="flex flex-col gap-5">
-                        <div class="w-full flex justify-center py-4">
-                            <img src="{{ asset('images/smart-university.png') }}" alt="Smart University Logo" class="w-[50%] rounded-lg">
+                        <div class="w-full flex justify-center py-2 md:py-4">
+                            <img src="{{ asset('images/smart-university.png') }}" alt="Smart University Logo" class="w-[85%] sm:w-[70%] md:w-[50%] rounded-lg">
                         </div>
 
-                        <div class="flex flex-col gap-4 text-[13px] text-justify text-[#475569] leading-relaxed">
+                        <div class="flex flex-col gap-4 text-xs md:text-[13px] text-justify text-[#475569] leading-relaxed">
                             <p>
                                 The emblem of Universitas Airlangga is Garuda Mukti with Lord Vishnu as its rider. Lord Vishnu symbolizes King Airlangga himself, representing his wisdom, strength, and noble character.
                             </p>
@@ -56,11 +51,11 @@
                     </div>
                 </div>
 
-                <div class="w-full flex flex-col gap-7">
-                    <h1 class="text-4xl font-medium">
+                <div class="w-full flex flex-col gap-5 md:gap-7">
+                    <h1 class="text-2xl md:text-3xl lg:text-4xl font-medium">
                         Periodic Mandatory Information
                     </h1>
-                    <div class="flex flex-col gap-5">
+                    <div class="flex flex-col gap-3 md:gap-5">
                         <x-link-card-small title="Faculty Profile" href="#" />
                         <x-link-card-small title="Faculty Vision and Mission" href="#" />
                         <x-link-card-small title="Events" href="#" />
@@ -76,11 +71,11 @@
                     </div>
                 </div>
 
-                <div class="w-full flex flex-col gap-7">
-                    <h1 class="text-4xl font-medium">
+                <div class="w-full flex flex-col gap-5 md:gap-7">
+                    <h1 class="text-2xl md:text-3xl lg:text-4xl font-medium">
                         Information Available Anytime
                     </h1>
-                    <div class="flex flex-col gap-5">
+                    <div class="flex flex-col gap-3 md:gap-5">
                         <x-link-card-small title="Public Information List (DIP)" href="#" />
                         <x-link-card-small title="Faculty Strategic Plan (Renstra)" href="#" />
                         <x-link-card-small title="Academic Calendar" href="#" />
@@ -97,11 +92,11 @@
                     </div>
                 </div>
 
-                <div class="w-full flex flex-col gap-7">
-                    <h1 class="text-4xl font-medium">
+                <div class="w-full flex flex-col gap-5 md:gap-7">
+                    <h1 class="text-2xl md:text-3xl lg:text-4xl font-medium">
                         Information Request
                     </h1>
-                    <div class="flex flex-col gap-5">
+                    <div class="flex flex-col gap-3 md:gap-5">
                         <x-link-card-small title="Information Services" href="#" />
                         
                         <x-link-card-small-last title="Public Information Request Form" href="#" />

@@ -7,7 +7,7 @@
     <a href="/about-us/academic-society"
         class="whitespace-nowrap shrink-0 px-5 md:px-6 py-2 rounded-full text-sm transition-all duration-200
         {{ $active === 'practice'
-    ? 'bg-[#275CAA] text-white hover:bg-[#1d4f96]'
+    ? 'bg-[#275CAA] text-white'
     : 'border border-[#275CAA] text-[#275CAA] hover:bg-[#275CAA] hover:text-white' }}">
         Department of Pharmacy Practice
     </a>
@@ -15,7 +15,7 @@
     <a href="/about-us/academic-society/pharmaceutical-sciences"
         class="whitespace-nowrap shrink-0 px-5 md:px-6 py-2 rounded-full text-sm transition-all duration-200
         {{ $active === 'sciences'
-    ? 'bg-[#275CAA] text-white hover:bg-[#1d4f96]'
+    ? 'bg-[#275CAA] text-white'
     : 'border border-[#275CAA] text-[#275CAA] hover:bg-[#275CAA] hover:text-white' }}">
         Department of Pharmaceutical Sciences
     </a>
@@ -23,7 +23,7 @@
     <a href="/about-us/academic-society/staff"
         class="whitespace-nowrap shrink-0 px-5 md:px-6 py-2 rounded-full text-sm transition-all duration-200
         {{ $active === 'staff'
-    ? 'bg-[#275CAA] text-white hover:bg-[#1d4f96]'
+    ? 'bg-[#275CAA] text-white'
     : 'border border-[#275CAA] text-[#275CAA] hover:bg-[#275CAA] hover:text-white' }}">
         Staff
     </a>
