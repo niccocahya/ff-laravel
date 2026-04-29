@@ -27,104 +27,119 @@
 
     <div class="main-content flex flex-col pt-16">
 
-         <x-hero-section title='Facilities & Units'
-                description='An overview of academic facilities, laboratories, and supporting units that enhance learning, research, and professional development within the faculty.' />
+        <x-hero-section title='Facilities & Units'
+            description='An overview of academic facilities, laboratories, and supporting units that enhance learning, research, and professional development within the faculty.' />
 
         <x-pagination-facilities-units active="reading-room" />
 
-        <div class="fade-in px-28 py-16 flex flex-col items-center bg-[#F7FFFA]">
-            
+        <div class="fade-in px-4 sm:px-8 md:px-16 lg:px-28 py-10 sm:py-12 md:py-16 flex flex-col items-center bg-[#F7FFFA]">
+
             <div class="w-full max-w-[1184px] flex flex-col shadow-[0px_4px_10px_rgba(0,0,0,0.05)] rounded-xl overflow-hidden">
-                
-                <div class="w-full h-20 bg-[#275CAA] flex items-center px-6">
-                    <div class="w-[60px] text-gray-50 text-xl font-medium">No.</div>
-                    <div class="w-[380px] text-gray-50 text-xl font-medium px-4">Title</div>
-                    <div class="w-[140px] text-gray-50 text-xl font-medium text-center">Edition</div>
-                    <div class="w-[180px] text-gray-50 text-xl font-medium text-center">Study</div>
-                    <div class="w-[200px] text-gray-50 text-xl font-medium text-center">Subject</div>
-                    <div class="flex-1 text-gray-50 text-xl font-medium text-right">Call Number</div>
-                </div>
 
-                <div class="flex flex-col">
-                    @php
-                        $books = [
-                            [
-                                'title' => 'Drug Discovery & Development : Technology in transition / Editor : Raymond G.Hill',
-                                'edition' => '2nd Edition',
-                                'study' => 'London : Churchil Livingstone Elsevier, 2013',
-                                'subject' => 'Drug Discovery & Development',
-                                'call' => '615.19 EDI d'
-                            ],
-                            [
-                                'title' => 'Pharmacognosy Phytochemistry / Jean Bruneton',
-                                'edition' => '2nd Edition',
-                                'study' => 'New York : Lavoisier, 1995',
-                                'subject' => 'Pharmacognosy',
-                                'call' => '615.321 JEA p'
-                            ],
-                        ];
-                    @endphp
+                <div class="w-full overflow-x-auto">
 
-                    @for ($i = 0; $i < 10; $i++)
-                        @php 
-                            $book = $books[$i % 2]; // Loop data contoh
-                            $rowBg = ($i % 2 == 0) ? 'bg-gray-50' : 'bg-[#F8FAFC]';
+                    <div class="min-w-[1160px] w-full h-16 sm:h-20 bg-[#275CAA] flex items-center px-4 sm:px-6">
+                        <div class="w-[60px] text-gray-50 text-sm sm:text-base lg:text-xl font-medium">No.</div>
+                        <div class="w-[380px] text-gray-50 text-sm sm:text-base lg:text-xl font-medium px-4">Title</div>
+                        <div class="w-[140px] text-gray-50 text-sm sm:text-base lg:text-xl font-medium text-center">Edition</div>
+                        <div class="w-[180px] text-gray-50 text-sm sm:text-base lg:text-xl font-medium text-center">Study</div>
+                        <div class="w-[200px] text-gray-50 text-sm sm:text-base lg:text-xl font-medium text-center">Subject</div>
+                        <div class="flex-1 text-gray-50 text-sm sm:text-base lg:text-xl font-medium text-right">Call Number</div>
+                    </div>
+
+                    <div class="flex flex-col min-w-[1160px]">
+                        @php
+                            $books = [
+                                [
+                                    'title' => 'Drug Discovery & Development : Technology in transition / Editor : Raymond G.Hill',
+                                    'edition' => '2nd Edition',
+                                    'study' => 'London : Churchil Livingstone Elsevier, 2013',
+                                    'subject' => 'Drug Discovery & Development',
+                                    'call' => '615.19 EDI d'
+                                ],
+                                [
+                                    'title' => 'Pharmacognosy Phytochemistry / Jean Bruneton',
+                                    'edition' => '2nd Edition',
+                                    'study' => 'New York : Lavoisier, 1995',
+                                    'subject' => 'Pharmacognosy',
+                                    'call' => '615.321 JEA p'
+                                ],
+                            ];
                         @endphp
-                        
-                        <div class="w-full min-h-[80px] flex items-center px-6 {{ $rowBg }} border-b border-gray-100 hover:bg-blue-50/50 transition-colors">
-                            <div class="w-[60px] text-neutral-700 text-lg font-normal">{{ $i + 1 }}</div>
-                            
-                            <div class="w-[380px] px-4 py-4 text-neutral-900 text-base font-normal leading-snug">
-                                {{ $book['title'] }}
+
+                        @for ($i = 0; $i < 10; $i++)
+                            @php 
+                                $book = $books[$i % 2];
+                                $rowBg = ($i % 2 == 0) ? 'bg-gray-50' : 'bg-[#F8FAFC]';
+                            @endphp
+
+                            <div class="w-full min-h-[72px] sm:min-h-[80px] flex items-center px-4 sm:px-6 {{ $rowBg }} border-b border-gray-100 hover:bg-blue-50/50 transition-colors">
+                                
+                                <div class="w-[60px] text-neutral-700 text-base sm:text-lg font-normal">
+                                    {{ $i + 1 }}
+                                </div>
+
+                                <div class="w-[380px] px-4 py-4 text-neutral-900 text-sm sm:text-base font-normal leading-snug">
+                                    {{ $book['title'] }}
+                                </div>
+
+                                <div class="w-[140px] text-center text-neutral-700 text-sm sm:text-base font-normal">
+                                    {{ $book['edition'] }}
+                                </div>
+
+                                <div class="w-[180px] px-4 text-center text-neutral-600 text-xs sm:text-sm font-normal italic">
+                                    {{ $book['study'] }}
+                                </div>
+
+                                <div class="w-[200px] text-center text-neutral-700 text-sm sm:text-base font-normal">
+                                    {{ $book['subject'] }}
+                                </div>
+
+                                <div class="flex-1 text-right text-[#275CAA] font-bold font-mono text-sm sm:text-base">
+                                    {{ $book['call'] }}
+                                </div>
+
                             </div>
-                            
-                            <div class="w-[140px] text-center text-neutral-700 text-base font-normal">
-                                {{ $book['edition'] }}
-                            </div>
-                            
-                            <div class="w-[180px] px-4 text-center text-neutral-600 text-sm font-normal italic">
-                                {{ $book['study'] }}
-                            </div>
-                            
-                            <div class="w-[200px] text-center text-neutral-700 text-base font-normal">
-                                {{ $book['subject'] }}
-                            </div>
-                            
-                            <div class="flex-1 text-right text-[#275CAA] font-bold font-mono text-base">
-                                {{ $book['call'] }}
-                            </div>
-                        </div>
-                    @endfor
+                        @endfor
+                    </div>
+
                 </div>
 
             </div>
 
-             <div class="flex justify-center items-center gap-4 pb-20 pt-8 text-[#1E293B]">
-            <button class="hover:text-[#275CAA] transition-colors p-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path></svg>
-            </button>
-            
-            <div class="flex items-center gap-2">
-                <button class="w-8 h-8 flex items-center justify-center bg-[#275CAA] text-white rounded text-sm font-medium">1</button>
-                <button class="w-8 h-8 flex items-center justify-center hover:bg-gray-100 rounded text-sm font-medium">2</button>
-                <button class="w-8 h-8 flex items-center justify-center hover:bg-gray-100 rounded text-sm font-medium">3</button>
-                <button class="w-8 h-8 flex items-center justify-center hover:bg-gray-100 rounded text-sm font-medium">4</button>
-                <button class="w-8 h-8 flex items-center justify-center hover:bg-gray-100 rounded text-sm font-medium">5</button>
-                <button class="w-8 h-8 flex items-center justify-center hover:bg-gray-100 rounded text-sm font-medium">6</button>
-                <button class="w-8 h-8 flex items-center justify-center hover:bg-gray-100 rounded text-sm font-medium">7</button>
-                <button class="w-8 h-8 flex items-center justify-center hover:bg-gray-100 rounded text-sm font-medium">8</button>
-                <button class="w-8 h-8 flex items-center justify-center hover:bg-gray-100 rounded text-sm font-medium">9</button>
-                <button class="w-8 h-8 flex items-center justify-center hover:bg-gray-100 rounded text-sm font-medium">10</button>
+            <div class="w-full max-w-[1184px] flex justify-center items-center gap-2 sm:gap-4 pb-16 sm:pb-20 pt-6 sm:pt-8 text-[#1E293B] overflow-x-auto">
+
+                <button class="hover:text-[#275CAA] transition-colors p-2 shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path>
+                    </svg>
+                </button>
+
+                <div class="flex items-center gap-2 min-w-max">
+                    <button class="w-8 h-8 flex items-center justify-center bg-[#275CAA] text-white rounded text-sm font-medium">1</button>
+                    <button class="w-8 h-8 flex items-center justify-center hover:bg-gray-100 rounded text-sm font-medium">2</button>
+                    <button class="w-8 h-8 flex items-center justify-center hover:bg-gray-100 rounded text-sm font-medium">3</button>
+                    <button class="w-8 h-8 flex items-center justify-center hover:bg-gray-100 rounded text-sm font-medium">4</button>
+                    <button class="w-8 h-8 flex items-center justify-center hover:bg-gray-100 rounded text-sm font-medium">5</button>
+                    <button class="w-8 h-8 flex items-center justify-center hover:bg-gray-100 rounded text-sm font-medium">6</button>
+                    <button class="w-8 h-8 flex items-center justify-center hover:bg-gray-100 rounded text-sm font-medium">7</button>
+                    <button class="w-8 h-8 flex items-center justify-center hover:bg-gray-100 rounded text-sm font-medium">8</button>
+                    <button class="w-8 h-8 flex items-center justify-center hover:bg-gray-100 rounded text-sm font-medium">9</button>
+                    <button class="w-8 h-8 flex items-center justify-center hover:bg-gray-100 rounded text-sm font-medium">10</button>
+                </div>
+
+                <button class="hover:text-[#275CAA] transition-colors p-2 shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M90.34,202.34a8,8,0,0,0,11.32,11.32l80-80a8,8,0,0,0,0-11.32l-80-80a8,8,0,0,0-11.32,11.32L164.69,128Z"></path>
+                    </svg>
+                </button>
+
             </div>
-           
-            <button class="hover:text-[#275CAA] transition-colors p-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 256 256"><path d="M90.34,202.34a8,8,0,0,0,11.32,11.32l80-80a8,8,0,0,0,0-11.32l-80-80a8,8,0,0,0-11.32,11.32L164.69,128Z"></path></svg>
-            </button>
-        </div>
 
         </div>
 
         <x-footer />
+
     </div>
 </div>
 

@@ -1,6 +1,6 @@
 @props([
  'title',
- 'description',
+ 'description' => null,
  'id' => uniqid()
 ])
 
@@ -15,9 +15,11 @@
     {{ $title }}
    </h1>
 
-   <p class="text-sm md:text-base text-justify text-gray-600">
+   @if($description)
+<p class="text-sm md:text-base text-justify text-gray-600">
     {{ $description }}
-   </p>
+</p>
+@endif
   </div>
 
   <svg 

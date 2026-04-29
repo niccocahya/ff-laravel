@@ -27,46 +27,51 @@
 
     <div class="main-content flex flex-col pt-16">
 
-         <x-hero-section title='Facilities & Units'
-                description='An overview of academic facilities, laboratories, and supporting units that enhance learning, research, and professional development within the faculty.' />
+        <x-hero-section title='Facilities & Units'
+            description='An overview of academic facilities, laboratories, and supporting units that enhance learning, research, and professional development within the faculty.' />
 
         {{-- TAB NAVIGATION --}}
         <x-pagination-facilities-units active="pharmacy" />
 
-        <div class="fade-in bg-[#F7FFFA] px-28 py-20 flex flex-col gap-24">
+        <div class="fade-in bg-[#F7FFFA] px-4 sm:px-8 md:px-16 lg:px-28 py-12 sm:py-16 lg:py-20 flex flex-col gap-14 sm:gap-18 lg:gap-24">
 
-            <div class="max-w-[1184px] mx-auto flex flex-col gap-6">
-                <h2 class="text-neutral-950 text-[40px] font-medium tracking-[-0.04em]">Airlangga Pharmacy</h2>
-                
-                <div class="flex justify-start items-start gap-12">
-                    <img class="w-[567px] h-[756px] object-cover rounded-xl shadow-md" 
-                         src="{{ asset('images/apotek1.png') }}" 
-                         onerror="this.src='https://placehold.co/567x756?text=Apotek+1'" />
-                    
-                    <div class="w-[569px] flex flex-col gap-12">
+            <div class="max-w-[1184px] mx-auto flex flex-col gap-4 sm:gap-6">
+                <h2 class="text-neutral-950 text-3xl sm:text-[40px] font-medium tracking-[-0.04em]">Airlangga Pharmacy</h2>
+
+                <div class="flex flex-col lg:flex-row justify-start items-start gap-8 lg:gap-12">
+
+                    <img class="w-full lg:w-[567px] h-72 sm:h-[520px] lg:h-[756px] object-cover rounded-xl shadow-md"
+                        src="{{ asset('images/apotek1.png') }}"
+                        onerror="this.src='https://placehold.co/567x756?text=Apotek+1'" />
+
+                    <div class="w-full lg:w-[569px] flex flex-col gap-8 sm:gap-10 lg:gap-12">
+
                         <div class="flex flex-col gap-4">
-                            <h3 class="text-neutral-950 text-2xl font-medium">A brief History</h3>
-                            <p class="text-justify text-neutral-700 text-lg font-normal leading-relaxed">
+                            <h3 class="text-neutral-950 text-xl sm:text-2xl font-medium">A brief History</h3>
+                            <p class="text-justify text-neutral-700 text-base sm:text-lg font-normal leading-relaxed">
                                 Airlangga Pharmacy was inaugurated on August 29, 1998 and was established on land owned by Airlangga University measuring 384 M2 with a building area of ​​135 M2 consisting of 2 floors. Construction funds came from Airlangga University, the Faculty of Pharmacy, donations from IKOMA, alumni, and other participating institutions. On March 26, 2016, Airlangga Pharmacy moved to the Airlangga Corner Building, Jalan Dharmawangsa No. 1 Surabaya, which is its current location.
                             </p>
                         </div>
+
                         <div class="flex flex-col gap-4">
-                            <h3 class="text-neutral-950 text-2xl font-medium">Background</h3>
-                            <p class="text-justify text-neutral-700 text-lg font-normal leading-relaxed">
+                            <h3 class="text-neutral-950 text-xl sm:text-2xl font-medium">Background</h3>
+                            <p class="text-justify text-neutral-700 text-base sm:text-lg font-normal leading-relaxed">
                                 The rationale for establishing the Pharmacy was to improve the skills of pharmacist graduates particularly their professionalism. As the first Educational Pharmacy in Indonesia, it adheres to the motto <strong>"No Pharmacist, No Service,"</strong> ensuring that a pharmacist is always present. Currently, services are provided by 4 pharmacists, 2 pharmacist assistants, 2 prescription clerks, and 1 cleaning staff.
                             </p>
                         </div>
+
                     </div>
+
                 </div>
             </div>
 
-            <div class="max-w-[1184px] mx-auto flex justify-start items-start gap-11">
-                
-                <div class="w-[567px] flex flex-col gap-12">
-                    
+            <div class="max-w-[1184px] mx-auto flex flex-col lg:flex-row justify-start items-start gap-8 lg:gap-11">
+
+                <div class="w-full lg:w-[567px] flex flex-col gap-8 sm:gap-10 lg:gap-12">
+
                     <div class="flex flex-col gap-4">
-                        <h3 class="text-neutral-950 text-2xl font-medium">Objective</h3>
-                        <ul class="text-justify text-neutral-700 text-lg font-normal leading-relaxed list-disc pl-5 flex flex-col gap-2">
+                        <h3 class="text-neutral-950 text-xl sm:text-2xl font-medium">Objective</h3>
+                        <ul class="text-justify text-neutral-700 text-base sm:text-lg font-normal leading-relaxed list-disc pl-5 flex flex-col gap-2">
                             <li>To serve as a learning center for pharmacy students and a role model for prospective pharmacists.</li>
                             <li>To serve as a community service center providing accurate healthcare information.</li>
                             <li>To conduct research in the field of community pharmacy.</li>
@@ -75,15 +80,15 @@
                     </div>
 
                     <div class="flex flex-col gap-4">
-                        <h3 class="text-neutral-950 text-2xl font-medium">Benefits</h3>
-                        <p class="text-justify text-neutral-700 text-lg font-normal leading-relaxed">
+                        <h3 class="text-neutral-950 text-xl sm:text-2xl font-medium">Benefits</h3>
+                        <p class="text-justify text-neutral-700 text-base sm:text-lg font-normal leading-relaxed">
                             Supporting academic activities and providing professional service training for students as prospective pharmacists while improving public health services.
                         </p>
                     </div>
 
                     <div class="flex flex-col gap-4">
-                        <h3 class="text-neutral-950 text-2xl font-medium">Services</h3>
-                        <p class="text-justify text-neutral-700 text-lg font-normal leading-relaxed">
+                        <h3 class="text-neutral-950 text-xl sm:text-2xl font-medium">Services</h3>
+                        <p class="text-justify text-neutral-700 text-base sm:text-lg font-normal leading-relaxed">
                             - Pharmaceutical services for JKN & INHEALTH participants.<br/>
                             - Services for UNAIR students and the general public.<br/>
                             - Comprehensive Drug Information Services.
@@ -91,21 +96,25 @@
                     </div>
 
                     <div class="flex flex-col gap-4">
-                        <h3 class="text-neutral-950 text-2xl font-medium">Location</h3>
-                        <div class="w-full h-60 rounded-xl overflow-hidden shadow-sm border border-gray-100">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.7335607317765!2d112.75624797587635!3d-7.271168171441865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2499708761121%3A0x7d672956f4d1e2e!2sApotek%20Farmasi%20Airlangga!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid" 
+                        <h3 class="text-neutral-950 text-xl sm:text-2xl font-medium">Location</h3>
+
+                        <div class="w-full h-56 sm:h-60 rounded-xl overflow-hidden shadow-sm border border-gray-100">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.7335607317765!2d112.75624797587635!3d-7.271168171441865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2499708761121%3A0x7d672956f4d1e2e!2sApotek%20Farmasi%20Airlangga!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid"
                                 width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
                             </iframe>
                         </div>
-                        <p class="text-neutral-700 text-lg">Airlangga Pharmacy, Jl. Dharmawangsa No. 1 Surabaya</p>
+
+                        <p class="text-neutral-700 text-base sm:text-lg">Airlangga Pharmacy, Jl. Dharmawangsa No. 1 Surabaya</p>
                     </div>
 
                     <div class="flex flex-col gap-4">
-                        <h3 class="text-neutral-950 text-2xl font-medium">Contact & Information</h3>
-                        <div class="text-neutral-700 text-lg font-normal leading-relaxed">
+                        <h3 class="text-neutral-950 text-xl sm:text-2xl font-medium">Contact & Information</h3>
+
+                        <div class="text-neutral-700 text-base sm:text-lg font-normal leading-relaxed">
                             Tel/Fax: 031-99441672<br/>
                             WhatsApp: 081214354317<br/>
+
                             <div class="mt-4 p-4 bg-gray-50 rounded-lg border-l-4 border-[#2E9853]">
                                 <strong>Opening Hours:</strong><br/>
                                 Mon – Fri: 07.30 - 21.00<br/>
@@ -113,20 +122,23 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
 
-                <div class="w-[572px] flex flex-col gap-6">
-                    <img class="w-full h-96 object-cover rounded-xl shadow-md" 
-                         src="{{ asset('images/apotek2.png') }}" 
-                         onerror="this.src='https://placehold.co/572x384?text=Apotek+2'" />
-                    
-                    <img class="w-full h-[857px] object-cover rounded-xl shadow-md" 
-                         src="{{ asset('images/apotek3.png') }}" 
-                         onerror="this.src='https://placehold.co/572x857?text=Apotek+3'" />
-                    
-                    <img class="w-full h-96 object-cover rounded-xl shadow-md" 
-                         src="{{ asset('images/apotek4.png') }}" 
-                         onerror="this.src='https://placehold.co/572x384?text=Apotek+4'" />
+                <div class="w-full lg:w-[572px] flex flex-col gap-4 sm:gap-6">
+
+                    <img class="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-xl shadow-md"
+                        src="{{ asset('images/apotek2.png') }}"
+                        onerror="this.src='https://placehold.co/572x384?text=Apotek+2'" />
+
+                    <img class="w-full h-80 sm:h-[520px] lg:h-[857px] object-cover rounded-xl shadow-md"
+                        src="{{ asset('images/apotek3.png') }}"
+                        onerror="this.src='https://placehold.co/572x857?text=Apotek+3'" />
+
+                    <img class="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-xl shadow-md"
+                        src="{{ asset('images/apotek4.png') }}"
+                        onerror="this.src='https://placehold.co/572x384?text=Apotek+4'" />
+
                 </div>
 
             </div>

@@ -23,40 +23,41 @@
         <x-navbar />
 
         <div class="main-leadership flex flex-col pt-16">
-            
-            <x-hero-section title='Leadership and Organization'
-                description='Information on the faculty’s leadership structure, organizational governance, and administrative roles that support effective academic and institutional management.' />
 
-            <div class="content-area fade-in px-28 py-16 flex flex-col gap-16 bg-white">
+            <x-hero-section title='Leadership and Organization'
+                description='Information on the faculty`s leadership structure, organizational governance, and administrative roles that support effective academic and institutional management.' />
+
+            <div class="content-area fade-in px-4 sm:px-8 md:px-16 lg:px-28 py-10 md:py-16 flex flex-col gap-10 md:gap-16 bg-white">
 
                 <x-big-accordion-last title="Organizational Structure">
                     <div class="flex justify-center">
-                        <img src="{{ asset('images/bagan-struktur-organisasi.png') }}" class="w-[90%]">
+                        <img src="{{ asset('images/bagan-struktur-organisasi.png') }}" class="w-full sm:w-[90%]">
                     </div>
                 </x-big-accordion-last>
 
-                <div class="flex flex-col gap-10">
-                    <div class="flex justify-between items-end border-b pb-4 border-gray-100">
-                        <h2 class="text-neutral-950 text-[40px] font-medium tracking-[-0.04em]">Leadership Profile</h2>
-                        <div class="text-neutral-700 text-lg font-normal">2025-2030 Period</div>
+                {{-- Leadership Profile --}}
+                <div class="flex flex-col gap-6 md:gap-10">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end border-b pb-4 border-gray-100 gap-1 sm:gap-0">
+                        <h2 class="text-neutral-950 text-2xl md:text-[40px] font-medium tracking-[-0.04em]">Leadership Profile</h2>
+                        <div class="text-neutral-700 text-sm md:text-lg font-normal">2025-2030 Period</div>
                     </div>
-                    <div class="grid grid-cols-4 gap-6">
+                    <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
                         @php
                             $leaders = [
                                 ['slug' => 'dewi-melani', 'name' => 'Prof. apt. Dewi Melani Hariyadi, S.Si., M.Phil., Ph.D.', 'role' => 'Dean', 'img' => 'images/image-43.png'],
                                 ['slug' => 'helmy-yusuf', 'name' => 'Prof. apt. Helmy Yusuf, S.Si., M.Sc., Ph.D', 'role' => 'Vice Dean I', 'img' => 'images/image-44.png'],
                                 ['slug' => 'mahardian-rahmadi', 'name' => 'apt. Mahardian Rahmadi, S.Si., M.Sc., Ph.D.', 'role' => 'Vice Dean II', 'img' => 'images/image-45.png'],
-                                ['slug' => 'elida-zairina', 'name' => 'apt. Elida Zairina, S.Si., MPH., PhD.', 'role' => 'Vice Dean III', 'img' => 'images/image-46.png'],
+                                ['slug' => 'elida-zairina', 'name' => 'apt. Elida Zairina, S.Si., MPH., PhD.', 'role' => 'Vice Dean III', 'img' => 'images/elida_zairina.png'],
                             ];
                         @endphp
                         @foreach ($leaders as $leader)
                         <a href="/detail-dosen/" class="block group">
-                            <div class="w-full h-[402px] relative bg-gray-50 rounded-xl shadow-md overflow-hidden">
+                            <div class="w-full h-56 sm:h-72 md:h-[402px] relative bg-gray-50 rounded-xl shadow-md overflow-hidden">
                                 <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="{{ asset($leader['img']) }}" onerror="this.src='https://placehold.co/278x402?text=Photo'">
                                 <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-neutral-950/20 to-transparent"></div>
-                                <div class="absolute bottom-0 left-0 w-full p-6 flex flex-col gap-1">
-                                    <div class="text-gray-50 text-[18px] font-bold leading-tight">{{ $leader['name'] }}</div>
-                                    <div class="text-gray-50 text-sm font-normal opacity-90">{{ $leader['role'] }}</div>
+                                <div class="absolute bottom-0 left-0 w-full p-3 sm:p-4 md:p-6 flex flex-col gap-1">
+                                    <div class="text-gray-50 text-sm sm:text-base md:text-[18px] font-bold leading-tight">{{ $leader['name'] }}</div>
+                                    <div class="text-gray-50 text-xs sm:text-sm font-normal opacity-90">{{ $leader['role'] }}</div>
                                 </div>
                             </div>
                         </a>
@@ -64,12 +65,13 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col gap-10">
-                    <div class="flex justify-between items-end border-b pb-4 border-gray-100">
-                        <h2 class="text-neutral-950 text-[40px] font-medium tracking-[-0.04em]">Head of Department</h2>
-                        <div class="text-neutral-700 text-lg font-normal">2025-2030 Period</div>
+                {{-- Head of Department --}}
+                <div class="flex flex-col gap-6 md:gap-10">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end border-b pb-4 border-gray-100 gap-1 sm:gap-0">
+                        <h2 class="text-neutral-950 text-2xl md:text-[40px] font-medium tracking-[-0.04em]">Head of Department</h2>
+                        <div class="text-neutral-700 text-sm md:text-lg font-normal">2025-2030 Period</div>
                     </div>
-                    <div class="grid grid-cols-4 gap-6">
+                    <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
                         @php
                             $heads = [
                                 ['slug' => 'andi-hermansyah', 'name' => 'apt. Andi Hermansyah, S.Farm., M.Sc., Ph.D.', 'role' => 'Head of Department Pharmacy Practice', 'img' => 'images/image-124.png'],
@@ -80,12 +82,12 @@
                         @endphp
                         @foreach ($heads as $head)
                         <a href="/detail-dosen/{{ $head['slug'] }}" class="block group">
-                            <div class="w-full h-[402px] relative bg-gray-50 rounded-xl shadow-md overflow-hidden">
+                            <div class="w-full h-56 sm:h-72 md:h-[402px] relative bg-gray-50 rounded-xl shadow-md overflow-hidden">
                                 <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="{{ asset($head['img']) }}" onerror="this.src='https://placehold.co/278x402?text=Photo'">
                                 <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-neutral-950/0 to-transparent"></div>
-                                <div class="absolute bottom-0 left-0 w-full p-6 flex flex-col gap-1">
-                                    <div class="text-gray-50 text-[18px] font-bold leading-tight">{{ $head['name'] }}</div>
-                                    <div class="text-gray-50 text-sm font-normal">{{ $head['role'] }}</div>
+                                <div class="absolute bottom-0 left-0 w-full p-3 sm:p-4 md:p-6 flex flex-col gap-1">
+                                    <div class="text-gray-50 text-sm sm:text-base md:text-[18px] font-bold leading-tight">{{ $head['name'] }}</div>
+                                    <div class="text-gray-50 text-xs sm:text-sm font-normal">{{ $head['role'] }}</div>
                                 </div>
                             </div>
                         </a>
@@ -93,12 +95,13 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col gap-10">
-                    <div class="flex justify-between items-end border-b pb-4 border-gray-100">
-                        <h2 class="text-neutral-950 text-[40px] font-medium tracking-[-0.04em]">Study Program Coordinator</h2>
-                        <div class="text-neutral-700 text-lg font-normal">2025-2030 Period</div>
+                {{-- Study Program Coordinator --}}
+                <div class="flex flex-col gap-6 md:gap-10">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end border-b pb-4 border-gray-100 gap-1 sm:gap-0">
+                        <h2 class="text-neutral-950 text-2xl md:text-[40px] font-medium tracking-[-0.04em]">Study Program Coordinator</h2>
+                        <div class="text-neutral-700 text-sm md:text-lg font-normal">2025-2030 Period</div>
                     </div>
-                    <div class="grid grid-cols-5 gap-4">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
                         @php
                             $coords = [
                                 ['slug' => 'chrismawan-ardianto', 'name' => 'apt. Chrismawan Ardianto, S.Farm., M.Sc., Ph.D.', 'role' => 'Bachelor of Pharmacy Coordinator', 'img' => 'images/image-128.png'],
@@ -110,12 +113,12 @@
                         @endphp
                         @foreach ($coords as $coord)
                         <a href="/detail-dosen/{{ $coord['slug'] }}" class="block group">
-                            <div class="w-full h-[402px] relative bg-gray-50 rounded-xl shadow-md overflow-hidden">
+                            <div class="w-full h-56 sm:h-72 md:h-[402px] relative bg-gray-50 rounded-xl shadow-md overflow-hidden">
                                 <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="{{ asset($coord['img']) }}" onerror="this.src='https://placehold.co/224x402?text=Photo'">
                                 <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/90 to-transparent"></div>
-                                <div class="absolute bottom-0 left-0 w-full p-5 flex flex-col gap-1">
-                                    <div class="text-gray-50 text-[18px] font-bold leading-tight">{{ $coord['name'] }}</div>
-                                    <div class="text-gray-50 text-[12px] font-normal opacity-80 uppercase tracking-wider leading-tight">{{ $coord['role'] }}</div>
+                                <div class="absolute bottom-0 left-0 w-full p-3 sm:p-4 md:p-5 flex flex-col gap-1">
+                                    <div class="text-gray-50 text-sm sm:text-base md:text-[18px] font-bold leading-tight">{{ $coord['name'] }}</div>
+                                    <div class="text-gray-50 text-[10px] sm:text-[11px] md:text-[12px] font-normal opacity-80 uppercase tracking-wider leading-tight">{{ $coord['role'] }}</div>
                                 </div>
                             </div>
                         </a>
