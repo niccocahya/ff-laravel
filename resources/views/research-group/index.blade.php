@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research Group - Faculty of Pharmacy</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -23,28 +24,29 @@
 
     <div class="main-content flex flex-col pt-16">
 
-        <div class="relative w-full h-[670px] overflow-hidden">
+        {{-- Hero Section --}}
+        <div class="relative w-full h-[420px] sm:h-[520px] md:h-[670px] overflow-hidden">
             <div class="absolute inset-0">
-                <img class="w-full h-full object-cover" 
-                     src="{{ asset('images/rg-hero.png') }}" 
+                <img class="w-full h-full object-cover"
+                     src="{{ asset('images/rg-hero.png') }}"
                      onerror="this.src='https://placehold.co/1440x644?text=Research+Group+Hero'">
                 <div class="absolute inset-0 bg-gradient-to-r from-neutral-950/70 to-neutral-950/20"></div>
             </div>
 
-            <div class="relative z-10 h-full flex flex-col px-[128px] pt-[328px] pb-[64px]">
-                <div class="w-[655px] flex flex-col gap-8">
-                    <div class="flex flex-col gap-4">
-                        <p class="text-gray-50 text-lg font-medium tracking-wide">
+            <div class="relative z-10 h-full flex flex-col px-4 sm:px-8 md:px-16 lg:px-[128px] pt-[160px] sm:pt-[240px] md:pt-[328px] pb-10 md:pb-[64px]">
+                <div class="w-full max-w-[655px] flex flex-col gap-6 md:gap-8">
+                    <div class="flex flex-col gap-3 md:gap-4">
+                        <p class="text-gray-50 text-base md:text-lg font-medium tracking-wide">
                             Mitra Anda Dalam Penelitian Farmasi
                         </p>
-                        <h1 class="text-gray-50 text-[44px] font-bold leading-[52px] tracking-[-0.02em]">
+                        <h1 class="text-gray-50 text-2xl sm:text-3xl md:text-[44px] font-bold leading-tight md:leading-[52px] tracking-[-0.02em]">
                             Pharmaceutics and Delivery Systems for Drugs, Cosmetics, and Nanomedicine Research Group
                         </h1>
                     </div>
 
                     <a href="#layanan" class="group inline-flex">
-                        <div class="px-8 py-3 bg-[#275CAA] hover:bg-[#1d4f96] rounded-[4px] transition-all duration-300 inline-flex items-center gap-2.5">
-                            <span class="text-gray-50 text-sm tracking-wider uppercase font-medium">Jelajahi Layanan Kami</span>
+                        <div class="px-6 md:px-8 py-3 bg-[#275CAA] hover:bg-[#1d4f96] rounded-[4px] transition-all duration-300 inline-flex items-center gap-2.5">
+                            <span class="text-gray-50 text-xs md:text-sm tracking-wider uppercase font-medium">Jelajahi Layanan Kami</span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                             </svg>
@@ -55,36 +57,45 @@
         </div>
 
         <div class="fade-in">
-            
-            <div class="py-[64px] px-[128px]">
-                <div class="max-w-[1440px] mx-auto flex justify-start items-center gap-16">
-                    <div class="w-[508px] h-[536px] relative flex-shrink-0">
-                        <img class="w-60 h-96 left-0 top-0 absolute rounded-[4px] object-cover shadow-sm" 
-                             src="{{ asset('images/rg-about-us.png') }}" 
+
+            {{-- About Us --}}
+            <div class="py-10 md:py-[64px] px-4 sm:px-8 md:px-16 lg:px-[128px]">
+                <div class="max-w-[1440px] mx-auto flex flex-col lg:flex-row justify-start items-center gap-10 lg:gap-16">
+
+                    {{-- Overlapping images: visible only md+ --}}
+                    <div class="hidden md:block w-full max-w-[508px] h-[536px] relative flex-shrink-0">
+                        <img class="w-60 h-96 left-0 top-0 absolute rounded-[4px] object-cover shadow-sm"
+                             src="{{ asset('images/rg-about-us.png') }}"
                              onerror="this.src='https://placehold.co/240x384?text=About+1'" />
-                        
-                        <img class="w-60 h-96 left-[268px] top-[175px] absolute rounded-[4px] object-cover shadow-md" 
-                             src="{{ asset('images/rg-about-us.png') }}" 
+                        <img class="w-60 h-96 left-[268px] top-[175px] absolute rounded-[4px] object-cover shadow-md"
+                             src="{{ asset('images/rg-about-us.png') }}"
                              onerror="this.src='https://placehold.co/240x384?text=About+2'" />
                     </div>
 
-                    <div class="w-[608px] flex flex-col justify-start items-start gap-8">
-                        <h2 class="self-stretch text-neutral-950 text-[40px] font-medium font-['Lato'] tracking-[-0.04em] leading-tight">
+                    {{-- Single image on mobile --}}
+                    <div class="block md:hidden w-full aspect-video rounded-[4px] overflow-hidden shadow-sm">
+                        <img class="w-full h-full object-cover"
+                             src="{{ asset('images/rg-about-us.png') }}"
+                             onerror="this.src='https://placehold.co/240x384?text=About'">
+                    </div>
+
+                    <div class="w-full max-w-[608px] flex flex-col justify-start items-start gap-6 md:gap-8">
+                        <h2 class="self-stretch text-neutral-950 text-2xl md:text-[40px] font-medium font-['Lato'] tracking-[-0.04em] leading-tight">
                             Tentang Kami
                         </h2>
 
-                        <div class="self-stretch flex flex-col justify-start items-start gap-6">
-                            <p class="self-stretch text-justify text-neutral-700 text-lg font-normal font-['Lato'] leading-relaxed">
-                                Penelitian di bidang farmasi merupakan area penelitian strategis dan utama dalam dunia kesehatan. 
-                                <strong>Pharmaceutics and Delivery Systems for Drugs, Cosmetics, and Nanomedicine - Research Group (Pharm-DCN)</strong> 
-                                merupakan kelompok riset di bawah Fakultas Farmasi Universitas Airlangga yang bergerak dalam spektrum penelitian dari hulu hingga hilir; 
+                        <div class="self-stretch flex flex-col justify-start items-start gap-4 md:gap-6">
+                            <p class="self-stretch text-justify text-neutral-700 text-base md:text-lg font-normal font-['Lato'] leading-relaxed">
+                                Penelitian di bidang farmasi merupakan area penelitian strategis dan utama dalam dunia kesehatan.
+                                <strong>Pharmaceutics and Delivery Systems for Drugs, Cosmetics, and Nanomedicine - Research Group (Pharm-DCN)</strong>
+                                merupakan kelompok riset di bawah Fakultas Farmasi Universitas Airlangga yang bergerak dalam spektrum penelitian dari hulu hingga hilir;
                                 mulai dari penelitian dasar hingga pengembangan produk terapan.
                             </p>
-                            
-                            <p class="self-stretch text-justify text-neutral-700 text-lg font-normal font-['Lato'] leading-relaxed">
-                                Penelitian interdisipliner kami didasarkan pada prinsip-prinsip keterlibatan, inovasi dan dampak positif yang dihasilkan. 
-                                Dengan pendekatan berbasis kemitraan, Pharm-DCN adalah mitra yang tepat dalam memajukan penelitian tentang obat dengan efektifitas waktu dan sumber daya yang optimal. 
-                                Tim Pharm-DCN memiliki pengalaman unggul dalam memecahkan tantangan pengembangan produk farmasi seperti kelarutan yang buruk, stabilitas, dan kebutuhan untuk penghantaran obat lokal dan sistemik. 
+
+                            <p class="self-stretch text-justify text-neutral-700 text-base md:text-lg font-normal font-['Lato'] leading-relaxed">
+                                Penelitian interdisipliner kami didasarkan pada prinsip-prinsip keterlibatan, inovasi dan dampak positif yang dihasilkan.
+                                Dengan pendekatan berbasis kemitraan, Pharm-DCN adalah mitra yang tepat dalam memajukan penelitian tentang obat dengan efektifitas waktu dan sumber daya yang optimal.
+                                Tim Pharm-DCN memiliki pengalaman unggul dalam memecahkan tantangan pengembangan produk farmasi seperti kelarutan yang buruk, stabilitas, dan kebutuhan untuk penghantaran obat lokal dan sistemik.
                                 Pharm-DCN banyak bekerja sama dengan beberapa perusahaan yang mengembangkan produk farmasi, eksipien, bioteknologi, suplemen, nutrisi, kosmetik, bahkan perusahaan mesin produksi seperti alat pencetak tablet dll.
                             </p>
                         </div>
@@ -92,92 +103,99 @@
                 </div>
             </div>
 
-            <div class="py-[64px] px-[128px]">
+            {{-- Visi & Misi --}}
+            <div class="py-10 md:py-[64px] px-4 sm:px-8 md:px-16 lg:px-[128px]">
                 <div class="max-w-[1440px] mx-auto">
-                    <div class="w-full max-w-[1184px] flex flex-col justify-start items-start gap-12">
-                        <div class="w-full max-w-[964px] flex flex-col justify-start items-start gap-6">
-                            <h2 class="self-stretch text-neutral-950 text-[40px] font-medium font-['Lato'] tracking-[-0.04em]">Visi</h2>
-                            <p class="self-stretch text-justify text-neutral-700 text-lg font-normal font-['Lato'] leading-relaxed">
+                    <div class="w-full flex flex-col justify-start items-start gap-10 md:gap-12">
+
+                        {{-- Visi --}}
+                        <div class="w-full flex flex-col justify-start items-start gap-4 md:gap-6">
+                            <h2 class="self-stretch text-neutral-950 text-2xl md:text-[40px] font-medium font-['Lato'] tracking-[-0.04em]">Visi</h2>
+                            <p class="self-stretch text-justify text-neutral-700 text-base md:text-lg font-normal font-['Lato'] leading-relaxed">
                                 Menjadi grup riset yang inovatif dan unggul di kancah global dalam bidang pengembangan bahan aktif dan eksipien farmasi.
                             </p>
                         </div>
 
-                        <div class="self-stretch flex flex-col justify-start items-start gap-6">
-                            <h2 class="self-stretch text-neutral-950 text-[40px] font-medium font-['Lato'] tracking-[-0.04em]">Misi</h2>
-                            <div class="self-stretch h-[384px] relative bg-white rounded-xl shadow-[1px_2px_4px_0px_rgba(0,21,7,0.24)] overflow-hidden">
-                                <div class="w-[636px] left-[42px] top-[34px] absolute flex flex-col justify-start items-start gap-5">
-                                    @php
-                                        $missions = [
-                                            '01' => 'Merekayasa bahan aktif farmasi untuk meningkatkan karakteristik fisikokimia, mekanik, bioavailabilitas dan efektivitas;',
-                                            '02' => 'Merekayasa eksipien untuk meningkatkan karakteristik fisikokimia dan fisikomekanik;',
-                                            '03' => 'Mengembangkan proses preparasi untuk meningkatkan karakteristik bahan baku Farmasi;',
-                                            '04' => 'Mengembangkan formula untuk meningkatkan mutu dan efektivitas sediaan farmasi;',
-                                            '05' => 'Mengembangkan proses manufaktur sediaan farmasi yang efektif dan efisien.'
-                                        ];
-                                    @endphp
-                                    @foreach($missions as $number => $text)
-                                    <div class="self-stretch inline-flex justify-start items-start gap-4">
-                                        <div class="text-green-600 text-2xl font-medium font-['Lato'] min-w-[32px]">{{ $number }}</div>
-                                        <div class="flex-1 text-justify text-neutral-700 text-lg font-normal font-['Lato'] leading-tight">{{ $text }}</div>
+                        {{-- Misi --}}
+                        <div class="self-stretch flex flex-col justify-start items-start gap-4 md:gap-6">
+                            <h2 class="self-stretch text-neutral-950 text-2xl md:text-[40px] font-medium font-['Lato'] tracking-[-0.04em]">Misi</h2>
+                            <div class="self-stretch relative bg-white rounded-xl shadow-[1px_2px_4px_0px_rgba(0,21,7,0.24)] overflow-hidden">
+                                <div class="flex flex-col lg:flex-row">
+                                    {{-- Mission list --}}
+                                    <div class="flex-1 px-6 md:px-10 py-8 md:py-[34px] flex flex-col gap-5">
+                                        @php
+                                            $missions = [
+                                                '01' => 'Merekayasa bahan aktif farmasi untuk meningkatkan karakteristik fisikokimia, mekanik, bioavailabilitas dan efektivitas;',
+                                                '02' => 'Merekayasa eksipien untuk meningkatkan karakteristik fisikokimia dan fisikomekanik;',
+                                                '03' => 'Mengembangkan proses preparasi untuk meningkatkan karakteristik bahan baku Farmasi;',
+                                                '04' => 'Mengembangkan formula untuk meningkatkan mutu dan efektivitas sediaan farmasi;',
+                                                '05' => 'Mengembangkan proses manufaktur sediaan farmasi yang efektif dan efisien.'
+                                            ];
+                                        @endphp
+                                        @foreach($missions as $number => $text)
+                                        <div class="inline-flex justify-start items-start gap-4">
+                                            <div class="text-green-600 text-xl md:text-2xl font-medium font-['Lato'] min-w-[32px]">{{ $number }}</div>
+                                            <div class="flex-1 text-justify text-neutral-700 text-base md:text-lg font-normal font-['Lato'] leading-tight">{{ $text }}</div>
+                                        </div>
+                                        @endforeach
                                     </div>
-                                    @endforeach
+                                    {{-- Side image: hidden on mobile --}}
+                                    <div class="hidden lg:block w-[466px] flex-shrink-0">
+                                        <img class="w-full h-full object-cover" src="{{ asset('images/rg-hero.png') }}" />
+                                    </div>
                                 </div>
-                                <img class="w-[466px] h-full left-[718px] top-0 absolute object-cover" src="{{ asset('images/rg-hero.png') }}" />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div id="layanan" class="py-[64px] px-[128px]">
-                <div class="max-w-[1440px] mx-auto flex flex-col gap-12">
-                    <div class="w-full max-w-[1184px] flex flex-col gap-6">
-                        <h2 class="text-neutral-950 text-[40px] font-medium font-['Lato'] tracking-[-0.04em]">Layanan Kami</h2>
-                        <p class="text-justify text-neutral-700 text-lg font-normal font-['Lato'] leading-relaxed">
+            {{-- Layanan Kami --}}
+            <div id="layanan" class="py-10 md:py-[64px] px-4 sm:px-8 md:px-16 lg:px-[128px]">
+                <div class="max-w-[1440px] mx-auto flex flex-col gap-8 md:gap-12">
+                    <div class="w-full flex flex-col gap-4 md:gap-6">
+                        <h2 class="text-neutral-950 text-2xl md:text-[40px] font-medium font-['Lato'] tracking-[-0.04em]">Layanan Kami</h2>
+                        <p class="text-justify text-neutral-700 text-base md:text-lg font-normal font-['Lato'] leading-relaxed">
                             Pharmaceutics and Delivery Systems for Drugs, Cosmetics, and Nanomedicine Research Group memberikan solusi R&D agar memenuhi persyaratan dalam proses pengembangan produk Anda mulai dari praformulasi, formulasi, manufaktur (pada skala laboratorium sampai scale-up) hingga transfer teknologi. Kami telah memiliki kerjasama dan telah berkolaborasi dengan berbagai mitra di level nasional dan internasional dalam penelitian yang telah dilakukan.
                         </p>
                     </div>
 
-                    <div class="w-full max-w-[1184px] flex flex-wrap gap-12">
+                    <div class="w-full grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-12">
                         @php
                             $services = [
                                 [
                                     'title' => 'Analisis Sifat Bahan',
                                     'img' => 'images/rg-card1.png',
-                                    'top' => 'top-[187px]',
                                     'desc' => '1. Uji pelepasan dan stabilitas obat<br/>2. Pengembangan metode analisis, validasi, dan optimasi prosedur pengujian<br/>3. Pengujian bahan baku, karakterisasi produk<br/>4. Identifikasi dan evaluasi produk<br/>5. Verifikasi dan kualifikasi kompendia'
                                 ],
                                 [
                                     'title' => 'Pengembangan Obat Baru',
                                     'img' => 'images/rg-card2.png',
-                                    'top' => 'top-[187px]',
-                                    'desc' => '1. Praformulasi:<br/>  a. Peningkatan kelarutan dan uji stabilitas<br/>  b. Karakterisasi fisika, kimia dan mekanik<br/>  c. Polimorfisme dll.<br/>2. Proses optimasi dan validasi<br/>3. Scale up dan transfer teknologi'
+                                    'desc' => '1. Praformulasi:<br/>  a. Peningkatan kelarutan dan uji stabilitas<br/>  b. Karakterisasi fisika, kimia dan mekanik<br/>  c. Polimorfisme dll.<br/>2. Proses optimasi dan validasi<br/>3. Scale up dan transfer teknologi'
                                 ],
                                 [
                                     'title' => 'Formulasi Maju',
                                     'img' => 'images/rg-card3.png',
-                                    'top' => 'top-[187px]',
                                     'desc' => '1. Nanoteknologi: nanopartikel, liposom, misel, nanopartikel polimer, lipid, nanoemulsi, nanokristal, nanosuspensi<br/>2. Penyalutan dan enkapsulasi: fluid bed coating, spray dryer, extrusion/spheronisation<br/>3. Sistem penghantaran obat baru: dispersi padat, film, implan, kompleks inklusi, mikropartikel, pelet.'
                                 ],
                                 [
                                     'title' => 'Desain Bentuk Sediaan',
                                     'img' => 'images/rg-card4.png',
-                                    'top' => 'top-[165px]',
-                                    'desc' => '1. Bentuk sediaan konvensional meliputi padat (tablet, kapsul, pelet), semi padat (gel, krim) dan cair (larutan, suspensi, emulsi)<br/>2. Bentuk sediaan baru<br/>  a. Fast acting, long acting, pulsed, sustained, delayed, enteric<br/>  b. Peningkatan karakteristik fisikokimia mis. kelarutan, stabilitas, metabolisme, permeabilitas, bioavailabilitas<br/>  c. Penghantaran tertarget: lokal atau sistemik'
+                                    'desc' => '1. Bentuk sediaan konvensional meliputi padat (tablet, kapsul, pelet), semi padat (gel, krim) dan cair (larutan, suspensi, emulsi)<br/>2. Bentuk sediaan baru<br/>  a. Fast acting, long acting, pulsed, sustained, delayed, enteric<br/>  b. Peningkatan karakteristik fisikokimia mis. kelarutan, stabilitas, metabolisme, permeabilitas, bioavailabilitas<br/>  c. Penghantaran tertarget: lokal atau sistemik'
                                 ]
                             ];
                         @endphp
 
                         @foreach($services as $service)
-                        <div class="w-[568px] h-[420px] relative bg-white rounded-xl shadow-[1px_2px_4px_0px_rgba(0,21,7,0.24)] overflow-hidden group">
+                        <div class="w-full aspect-[568/420] relative bg-white rounded-xl shadow-[1px_2px_4px_0px_rgba(0,21,7,0.24)] overflow-hidden group">
                             <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="{{ asset($service['img']) }}">
                             <div class="absolute inset-0 bg-gradient-to-b from-neutral-950/0 via-neutral-950/20 to-neutral-950/75 backdrop-blur-[2px]"></div>
-                            <div class="w-[524px] left-[22px] {{ $service['top'] }} absolute flex flex-col gap-4 text-white">
-                                <div class="flex flex-col gap-3">
-                                    <h3 class="text-2xl font-bold font-['Lato']">{{ $service['title'] }}</h3>
+                            <div class="absolute bottom-0 left-0 right-0 p-4 md:p-6 flex flex-col gap-3 md:gap-4 text-white">
+                                <div class="flex flex-col gap-2 md:gap-3">
+                                    <h3 class="text-lg md:text-2xl font-bold font-['Lato']">{{ $service['title'] }}</h3>
                                     <div class="w-full h-0 border-t-2 border-gray-50/50"></div>
                                 </div>
-                                <p class="text-lg font-normal font-['Lato'] leading-snug">{!! $service['desc'] !!}</p>
+                                <p class="text-sm md:text-lg font-normal font-['Lato'] leading-snug">{!! $service['desc'] !!}</p>
                             </div>
                         </div>
                         @endforeach
@@ -185,16 +203,18 @@
                 </div>
             </div>
 
-            <div class="py-[64px] px-[128px]">
-                <div class="max-w-[1440px] mx-auto flex flex-col justify-start items-center gap-12">
-                    <h2 class="text-center text-neutral-950 text-[40px] font-medium font-['Lato'] tracking-[-0.04em]">Fasilitas</h2>
-                    <div class="inline-flex justify-start items-stretch shadow-[1px_2px_10px_0px_rgba(0,21,7,0.15)] rounded-lg overflow-hidden">
-                        <div class="w-96 px-8 py-10 bg-white flex flex-col justify-start items-center gap-6 border-r border-gray-200">
+            {{-- Fasilitas --}}
+            <div class="py-10 md:py-[64px] px-4 sm:px-8 md:px-16 lg:px-[128px]">
+                <div class="max-w-[1440px] mx-auto flex flex-col justify-start items-center gap-8 md:gap-12">
+                    <h2 class="text-center text-neutral-950 text-2xl md:text-[40px] font-medium font-['Lato'] tracking-[-0.04em]">Fasilitas</h2>
+                    <div class="w-full flex flex-col lg:flex-row justify-start items-stretch shadow-[1px_2px_10px_0px_rgba(0,21,7,0.15)] rounded-lg overflow-hidden">
+
+                        <div class="flex-1 px-6 md:px-8 py-8 md:py-10 bg-white flex flex-col justify-start items-center gap-6 border-b lg:border-b-0 lg:border-r border-gray-200">
                             <div class="flex flex-col justify-start items-center gap-4">
-                                <h3 class="text-center text-neutral-950 text-3xl font-medium font-['Lato'] tracking-[-0.04em]">Topik Riset</h3>
+                                <h3 class="text-center text-neutral-950 text-xl md:text-3xl font-medium font-['Lato'] tracking-[-0.04em]">Topik Riset</h3>
                                 <div class="w-16 h-1 bg-green-600 rounded-full"></div>
                             </div>
-                            <ul class="list-disc pl-5 text-left text-neutral-950 text-lg font-normal font-['Lato'] leading-relaxed space-y-2">
+                            <ul class="list-disc pl-5 text-left text-neutral-950 text-base md:text-lg font-normal font-['Lato'] leading-relaxed space-y-2">
                                 <li>Rekayasa bahan aktif BCS II; bahan sintesis dan bahan alam</li>
                                 <li>Rekayasa eksipien</li>
                                 <li>Sistem dispersi padat, kompleks inklusi, kokristal, nanokristal, misel, liposom, mikropartikel dan nanopartikel</li>
@@ -204,12 +224,12 @@
                             </ul>
                         </div>
 
-                        <div class="w-96 px-8 py-10 bg-[#275CAA] flex flex-col justify-start items-center gap-6 shadow-xl z-10 scale-[1.02] rounded-lg">
+                        <div class="flex-1 px-6 md:px-8 py-8 md:py-10 bg-[#275CAA] flex flex-col justify-start items-center gap-6 shadow-xl lg:z-10 lg:scale-[1.02] rounded-lg">
                             <div class="flex flex-col justify-start items-center gap-4">
-                                <h3 class="text-center text-gray-50 text-3xl font-medium font-['Lato'] tracking-[-0.04em]">Fasilitas Riset</h3>
+                                <h3 class="text-center text-gray-50 text-xl md:text-3xl font-medium font-['Lato'] tracking-[-0.04em]">Fasilitas Riset</h3>
                                 <div class="w-16 h-1 bg-white rounded-full"></div>
                             </div>
-                            <ul class="list-disc pl-5 text-left text-gray-50 text-lg font-normal font-['Lato'] leading-relaxed space-y-2">
+                            <ul class="list-disc pl-5 text-left text-gray-50 text-base md:text-lg font-normal font-['Lato'] leading-relaxed space-y-2">
                                 <li>Peralatan preparasi dan manufaktur</li>
                                 <li>Instrumen pengujian</li>
                                 <li>Peralatan uji in vitro / in vivo</li>
@@ -218,12 +238,12 @@
                             </ul>
                         </div>
 
-                        <div class="w-96 px-8 py-10 bg-white flex flex-col justify-start items-center gap-6 border-l border-gray-200">
+                        <div class="flex-1 px-6 md:px-8 py-8 md:py-10 bg-white flex flex-col justify-start items-center gap-6 border-t lg:border-t-0 lg:border-l border-gray-200">
                             <div class="flex flex-col justify-start items-center gap-4">
-                                <h3 class="text-center text-neutral-950 text-3xl font-medium font-['Lato'] tracking-[-0.04em]">Mitra Penelitian</h3>
+                                <h3 class="text-center text-neutral-950 text-xl md:text-3xl font-medium font-['Lato'] tracking-[-0.04em]">Mitra Penelitian</h3>
                                 <div class="w-16 h-1 bg-green-600 rounded-full"></div>
                             </div>
-                            <ul class="list-disc pl-5 text-left text-neutral-950 text-lg font-normal font-['Lato'] leading-relaxed space-y-2">
+                            <ul class="list-disc pl-5 text-left text-neutral-950 text-base md:text-lg font-normal font-['Lato'] leading-relaxed space-y-2">
                                 <li>Lembaga Pemerintah</li>
                                 <li>Industri Farmasi</li>
                                 <li>Pusat Riset Nasional</li>
@@ -234,18 +254,19 @@
                 </div>
             </div>
 
-            <div class="py-[64px] px-[128px]">
-                <div class="max-w-[1440px] mx-auto flex flex-col gap-10">
-                    <div class="flex justify-between items-end border-b pb-4 border-gray-100">
-                        <h2 class="text-neutral-950 text-[40px] font-medium tracking-[-0.04em]">Head of Research Group</h2>
-                        <div class="text-neutral-700 text-lg font-normal">2025-2030 Period</div>
+            {{-- Head of Research Group --}}
+            <div class="py-10 md:py-[64px] px-4 sm:px-8 md:px-16 lg:px-[128px]">
+                <div class="max-w-[1440px] mx-auto flex flex-col gap-8 md:gap-10">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end border-b pb-4 border-gray-100 gap-1 sm:gap-0">
+                        <h2 class="text-neutral-950 text-2xl md:text-[40px] font-medium tracking-[-0.04em]">Head of Research Group</h2>
+                        <div class="text-neutral-700 text-sm md:text-lg font-normal">2025-2030 Period</div>
                     </div>
                     <div class="flex justify-center">
-                        <div class="w-[278px] h-[402px] relative bg-white rounded-xl shadow-md overflow-hidden">
+                        <div class="w-full max-w-[278px] h-[402px] relative bg-white rounded-xl shadow-md overflow-hidden">
                             <img class="w-full h-full object-cover" src="{{ asset('images/image-43.png') }}" />
                             <div class="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-neutral-950/20 to-transparent"></div>
-                            <div class="absolute bottom-0 left-0 w-full p-6 flex flex-col gap-1 text-white">
-                                <div class="text-[18px] font-bold leading-tight">Prof. apt. Dewi Melani Hariyadi, S.Si., M.Phil., Ph.D.</div>
+                            <div class="absolute bottom-0 left-0 w-full p-5 md:p-6 flex flex-col gap-1 text-white">
+                                <div class="text-base md:text-[18px] font-bold leading-tight">Prof. apt. Dewi Melani Hariyadi, S.Si., M.Phil., Ph.D.</div>
                                 <div class="text-sm font-normal opacity-90">Head of Research Group</div>
                             </div>
                         </div>
@@ -253,19 +274,20 @@
                 </div>
             </div>
 
-            <div class="py-[64px] px-[128px]">
-                <div class="max-w-[1440px] mx-auto flex flex-col gap-10">
+            {{-- Personil Kami --}}
+            <div class="py-10 md:py-[64px] px-4 sm:px-8 md:px-16 lg:px-[128px]">
+                <div class="max-w-[1440px] mx-auto flex flex-col gap-8 md:gap-10">
                     <div class="flex justify-between items-end border-b pb-4 border-gray-100">
-                        <h2 class="text-neutral-950 text-[40px] font-medium tracking-[-0.04em]">Personil Kami</h2>
+                        <h2 class="text-neutral-950 text-2xl md:text-[40px] font-medium tracking-[-0.04em]">Personil Kami</h2>
                     </div>
-                    <div class="w-full pb-16">
-                        <div class="grid grid-cols-2 gap-6">
+                    <div class="w-full pb-10 md:pb-16">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
                             @php
                                 $team = array_fill(0, 8, 'Prof. Dr. apt. Dwi Setyawan, S.Si., M.Si.');
                             @endphp
                             @foreach($team as $name)
-                            <div class="bg-white border border-gray-100 rounded-xl py-8 px-6 flex items-center justify-center text-center shadow-sm hover:shadow-md transition-all duration-200">
-                                <span class="text-[#334155] font-medium text-lg font-['Lato']">{{ $name }}</span>
+                            <div class="bg-white border border-gray-100 rounded-xl py-6 md:py-8 px-4 md:px-6 flex items-center justify-center text-center shadow-sm hover:shadow-md transition-all duration-200">
+                                <span class="text-[#334155] font-medium text-base md:text-lg font-['Lato']">{{ $name }}</span>
                             </div>
                             @endforeach
                         </div>
